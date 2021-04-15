@@ -1,6 +1,6 @@
 ul li {
     display: inline-block;
-    border: 3px solid magenta;
+    border: 3px solid #72B0D5;
     width: 150px;
     list-style-type: none;
     padding: 15px 15px 15px 25px;
