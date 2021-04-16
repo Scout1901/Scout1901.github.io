@@ -9,8 +9,7 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
 }
 
 nav> ul li {
@@ -18,7 +17,7 @@ nav> ul li {
     position: relative;
     text-align: center;
     font-weight: bold;
-    color: red;
+    color: white;
 }
 
 nav a {
@@ -34,7 +33,7 @@ nav a:hover, nav a:focus{
         background-color: #72B0D5;
 }
 nav a:active{
-    background-color: black;
+    background-color: #172A3A;
 }
 
 nav ul>li ul{
