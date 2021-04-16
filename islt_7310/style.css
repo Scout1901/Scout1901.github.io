@@ -2,9 +2,7 @@ h1 {
     color:#2298E2;
 }
 
-/Reflection Page/
-
-p#p1::first-letter{
+div p#p1::first-letter{
     font-weight: bold;
     color: #2298E2;
     font-size: 30px;
