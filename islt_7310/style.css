@@ -1,4 +1,36 @@
 h1 {
-    color:#2298E2
-    
+    color:#2298E2;
 }
+
+/Reflection Page/
+
+p#p1::first-letter{
+    font-weight: bold;
+    color: #2298E2;
+    font-size: 30px;
+}
+
+p#p2{
+    text-indent: 50px;
+}
+
+p#p3{
+    text-indent: 50px;
+}
+
+p#p4{
+    text-indent: 50px;
+}
+
+p#p5{
+    text-indent: 50px;
+}
+
+div{
+    width: 700px;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+}
+
+
