@@ -1,6 +1,40 @@
+/* 
+    Author: Erin Weaver
+    Create Date: 28 March 2021
+    Revised: 17 April 2021
+    
+    Description: This is the style.css file for my portfolio of e-learning development work. It contains all stylistic components for my portfolio 
+    website except those related to navigation.
+*/  
+
 h1 {
     color:#2298E2;
+    display: inline-block;
+    margin: 10px;
+    border: 0px;
+    position: relative;
+    top: 20px;
 }
+
+a{
+    color: black;
+}
+
+a#special{
+    text-decoration: none;
+    border: none;
+    background-color: #88e7b6;
+    padding: 10px;
+}
+
+footer {
+    position: relative;
+    top: 50px;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Reflection.html Page*/
 
 div p#p1::first-letter{
     font-weight: bold;
@@ -24,11 +58,38 @@ p#p5{
     text-indent: 50px;
 }
 
-div{
-    width: 700px;
-    border: none;
+.one {
+    display: block;
+    width: 800px;
     padding: 0px;
-    margin: 20px;
+    margin: 10px;
+    position: relative;
+    top: 30px;
 }
+
+
+/* About.html Page*/
+
+.two {
+    display: block;
+    width: 800px;
+    padding: 0px;
+    margin: 15px;
+    position: relative;
+    top: 30px;
+}
+
+/* Home.html Page*/
+
+.three {
+    display: block;
+    width: 800px;
+    padding: 0px;
+    margin: 15px;
+    position: relative;
+    top: 30px;
+}
+
+
 
 

@@ -1,9 +1,18 @@
+/* 
+    Author: Erin Weaver
+    Create Date: 28 March 2021
+    Revised: 17 April 2021
+    
+    Description: This is the style.css file for my portfolio of e-learning development work. It contains all stylistic components for my website navigation.
+*/  
+
 .active a:link {
     background-color: #72B0D5;
 }
 
 nav {
     top: 0px;
+    display: inline-block;
 }
 
 nav ul {
@@ -27,13 +36,14 @@ nav a {
     padding: 15px 15px 15px 15px;
     width: 150px;
     margin: 2px; 
-
 }
+
 nav a:hover, nav a:focus{
         background-color: #ffffff;
 }
 nav a:active{
     background-color: #172A3A;
+    color: white;
 }
 
 nav ul>li ul{
@@ -41,9 +51,12 @@ nav ul>li ul{
     top: 100%;
     display: none;
 }
-nave ul ul li {
+nav ul ul li {
     float: none;
 }
 nav>ul>li:hover>ul{
     display: block;
 }
+
+
+
