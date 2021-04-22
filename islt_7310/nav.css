@@ -15,7 +15,7 @@
 nav {
     justify-content: flex-end;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     grid-row: 1 / 2; 
     grid-column: 3 / 5;
@@ -24,7 +24,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
     margin: 0; 
 }
 
@@ -67,7 +67,7 @@ nav ul li:hover ul{
     display: block;
 }
 
-#menu_icon {
+.hamburger {
     background-color: red; 
     display: none;
     border: none;
@@ -87,8 +87,9 @@ nav ul li:hover ul{
 
 @media screen and (max-width:992px){
    
-    #menu_icon {
+    .hamburger {
         display: flex; 
+        
     }
     
     nav ul, nav:active ul {
@@ -108,7 +109,7 @@ nav ul li:hover ul{
 
 @media screen and (max-width:640px){
    
-    #menu_icon {
+    .hamburger {
         display: flex; 
     }
     
@@ -129,17 +130,15 @@ nav ul li:hover ul{
     .wrapper{
         display: flex;
         flex-direction: column;
-        margin: 5px;
-       
-      
+        margin: 5px;   
     }
 
     nav a{
         margin: 5px;
     }
     
-    header {
-        display: block; 
+    .title {
+        display: flex; 
         position: relative;
         height: 30px;
         width: 100%; 
@@ -151,30 +150,20 @@ nav ul li:hover ul{
         position: absolute;
         max-width: 100px;
         margin: 5px;
-        height: 25px;   
+        height: 25px;
+        top: 25px;
+        left: 25px;   
     }
 
-    menu_icon{
-        position: absolute;
+    .hamburger{
+        display: flex; 
         margin: 5px; 
     }
 
-    main{
+    .text {
         margin: 5px;
     }
 
-    .resume{
-
-    }
-    .videoresume {
-
-    }
-
-    .colorblock {
-
-    }
-    
-    .colorblock2 {
 
     }
 
