@@ -12,6 +12,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1">
+
         <title>About Me</title>
 
         <link rel="stylesheet" href="style.css">
@@ -20,35 +23,42 @@
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="about.html">About</a></li>
-                <li class= "active"><a href="projects.html">Projects</a>
-                    <ul>
-                        <li class="active"><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </li> 
-                <li class="active"><a href="reflection.html">Reflection</a></li>
-                <li class= "active"><a href="#contact.html">Contact</a>   
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                 <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li class= "active"><a href="projects.html">Projects</a>
+                        <ul>
+                            <li class="active"><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </li> 
+                    <li class="active"><a href="reflection.html">Reflection</a></li>
+                    <li class= "active"><a href="#contact.html">Contact</a>   
+                </ul>
 
-        <header>
-            <h1>About Me</h1>
-        </header>
-        
-        <main>
-            <div class="two">
+                <a href="#" id="menu_icon"></a>
+            </nav>
+
+            <div class="colorblock"></div>
+            <div class="colorblock2"></div>
+
+            <header>
+                <h1>About Me</h1>
+            </header>
+            
+            <aside id="logo"><a href= "#" target="blank"></a>ERIN WEAVER</aside>
+           
+            <main>
                 <p>
                 I’m Erin Weaver, a student at the University of Missouri pursuing an Ed.S degree in Learning Technologies and Design. I'm passionate 
                 about creating engaging learning experiences in STEM.
                 </p>
 
                 <p>
-                I've worked as a substitute teacher in Joplin, Missouri for the last 3 months. Before moving to Missouri, I worked at a community college 
+                Most recently, I've worked at a community college 
                 in Oklahoma developing STEM programs for under-served high schools. It was an incredible opportunity to grow! Before that, 
                 I worked as a 7-12th grade science teacher in Arkansas. I got to teach everything from astronomy to biology. This job made me eager to build 
                 my <strong><em>own</em></strong> creative science content! I hold a M.S. degree in Psychology from Pittsburg State University. I also hold a 
@@ -59,14 +69,20 @@
                 <blockquote>
                 “There are a whole lot of things in this world of ours you haven't started wondering about yet.” - <em>Roald Dahl</em>
                 </blockquote>
+            </main>
 
-                <a id="special" href="resume.pdf" target="blank">Resume</a>
-            </div>
-        </main>
+            <aside class="resume">
+                <a id="special" href="resume.pdf" target="blank"><strong>Resume PDF</strong><a>
+            </aside>
 
-        <footer>
-            <p>Erin Weaver<br/>eb6nr@missouri.edu<br/>Copyright &copy; 2021</p>
-        </footer>
+            <aside class="videoresume">
+                <a id="special" href="#videoresume.pdf" target="blank"> <strong>Video Resume</strong></a>
+            </aside>
 
+            <footer>
+                <p>Erin Weaver<br/>eb6nr@missouri.edu<br/>Copyright &copy; 2021</p>
+            </footer>
+
+         </div>
     </body>
 </html>

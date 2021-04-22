@@ -6,22 +6,29 @@
     Description: This is the style.css file for my portfolio of e-learning development work. It contains all stylistic components for my website navigation.
 */  
 
+/*Menu Base Styles*/
+
 .active a:link {
     background-color: #72B0D5;
 }
 
 nav {
-    top: 0px;
-    display: inline-block;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-row: 1 / 2; 
+    grid-column: 3 / 5;
+    align-items: center;    
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;  
+    margin: 0; 
 }
 
-nav> ul li {
+nav ul li {
     float: left;
     position: relative;
     text-align: center;
@@ -33,9 +40,10 @@ nav a {
     text-decoration: none;
     display: inline-block;
     border: 3px solid #72B0D5;
-    padding: 15px 15px 15px 15px;
-    width: 150px;
+    padding: 10px 10px 10px 10px;
+    width: auto;
     margin: 2px; 
+    color:black
 }
 
 nav a:hover, nav a:focus{
@@ -46,17 +54,129 @@ nav a:active{
     color: white;
 }
 
-nav ul>li ul{
+nav ul li ul{
     position: absolute;
     top: 100%;
     display: none;
+    z-index: 999;
 }
 nav ul ul li {
     float: none;
 }
-nav>ul>li:hover>ul{
+nav ul li:hover ul{
     display: block;
 }
 
+#menu_icon {
+    background-color: red; 
+    display: none;
+    border: none;
+    width: 30px;
+    height: 25px;
+    z-index: 100;
+    padding: 10px;
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    justify-content: center;
+    align-content: center; 
+    align-items: center; 
+    
+}
 
+/*Responsive Media*/
+
+@media screen and (max-width:992px){
+   
+    #menu_icon {
+        display: flex; 
+    }
+    
+    nav ul, nav:active ul {
+        display: none; 
+        position: absolute;
+    }
+
+    nav hover:ul{
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width:640px){
+   
+    #menu_icon {
+        display: flex; 
+    }
+    
+    nav ul, nav:active ul {
+        display: none; 
+        position: absolute;
+    }
+
+    nav hover:ul {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%; 
+    }
+  
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+       
+      
+    }
+
+    nav a{
+        margin: 5px;
+    }
+    
+    header {
+        display: block; 
+        position: relative;
+        height: 30px;
+        width: 100%; 
+    
+    }
+
+    #logo {
+        display: flex;
+        position: absolute;
+        max-width: 100px;
+        margin: 5px;
+        height: 25px;   
+    }
+
+    menu_icon{
+        position: absolute;
+        margin: 5px; 
+    }
+
+    main{
+        margin: 5px;
+    }
+
+    .resume{
+
+    }
+    .videoresume {
+
+    }
+
+    .colorblock {
+
+    }
+    
+    .colorblock2 {
+
+    }
+
+}
 
