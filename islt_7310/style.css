@@ -7,24 +7,6 @@
     website except those related to navigation.
 */  
 
-h1 {
-    color:black;
-    background-color: #88e7b6;
-    padding: 10px 10px 10px 10px;
-    width: 150px;
-    margin: auto; 
-}
-
-.baseline {
-    background-color: #172A3A;
-    grid-row: 9 / 10;
-    grid-column: 1 / 6; 
-    display: flex; 
-    align-self: center; 
-    width: 100%; 
-} 
-
-
 .copyright {
     grid-row: 9 / 10; 
     grid-column: 2 / 5;
@@ -34,20 +16,7 @@ h1 {
     width: 100%;
     padding: 10px;
     height: 20px; 
-}
-
-a.special{
-    text-decoration: none;
-    border: none;
-    background-color: #72B0D5;
-    padding: 10px;
-    color: black;
-    margin: auto;
-    display:flex;
-    max-width: 100px;
-    justify-content: center; 
-
-}
+    }
 
 #logo {
     grid-row: 1 / 2;
@@ -63,114 +32,226 @@ a.special{
     max-width: 150px;
     width: 100%; 
     margin: 20px; 
-    height: 10px;
-    
-}
+    height: 10px; 
+    }
 
 
 /* Reflection.html Page*/
 
-div p#p1::first-letter{
+.rwrapper{
+    display: grid;
+	grid-template-columns: 2% repeat(3, 1fr) 2%;
+	grid-template-rows: 70px 1fr repeat(3, 3fr) 1fr 70px; 
+	grid-gap: 16px; 
+    }
+
+.rbaseline {
+    background-color: #172A3A;
+    grid-row: 7/ 8;
+    grid-column: 1 / 6; 
+    display: flex; 
+    align-self: center; 
+    width: 100%; 
+    } 
+
+.rtext p#p1::first-letter{
     font-weight: bold;
     color: #2298E2;
     font-size: 30px;
-}
+    }
 
-p#p2{
+p#p2, p#p3, p#p4, p#p5{
     text-indent: 50px;
-}
+    }
 
-p#p3{
-    text-indent: 50px;
-}
+.rtext { 
+    grid-row: 3/ 6; 
+    grid-column: 2 / 5;
+        }
 
-p#p4{
-    text-indent: 50px;
-}
+.rtitle{
+    grid-row: 2/ 3; 
+    grid-column: 1 / 6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
 
-p#p5{
-    text-indent: 50px;
-}
-
-.rtext {
-    display: block;
-    width: 800px;
-    padding: 0px;
-    margin: 10px;
+#edu_journey{
+    color:black;
+    background-color: #88e7b6;
+    padding: 10px 10px 10px 10px;
+    margin: auto; 
     position: relative;
-    top: 30px;
-}
-
+    top: 20px;
+    }
 
 /* About.html Page*/
 
-.wrapper{
+a.special{
+    text-decoration: none;
+    border: none;
+    background-color: #72B0D5;
+    padding: 10px;
+    color: black;
+    margin: auto;
+    display:flex;
+    max-width: 100px;
+    justify-content: center; 
+    position: relative;
+    top: -100px; 
+    }
+
+#about_me {
+    color:black;
+    background-color: #88e7b6;
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+    margin: auto; 
+    position: relative;
+    top: 20px;
+    }
+
+.abaseline {
+    background-color: #172A3A;
+    grid-row: 8 / 9;
+    grid-column: 1 / 6; 
+    display: flex; 
+    align-self: center; 
+    width: 100%; 
+    } 
+
+.awrapper{
     display: grid;
 	grid-template-columns: 2% repeat(3, 1fr) 2%;
-	grid-template-rows: 70px repeat(7, 1fr) 70px; 
+	grid-template-rows: 70px 1fr repeat(4, 2fr) 70px; 
 	grid-gap: 16px;
-}
+    }
 
-.title {
+.atitle {
     grid-row: 2/ 3; 
     grid-column: 3 / 5;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center; 
-}
+    }
 
-.text { 
+.atext { 
     grid-row: 3/ 6; 
     grid-column: 3 / 5;
-}
+    }
 
 .resume { 
     grid-row: 6 / 7; 
     grid-column: 3 / 4;
     text-align: center; 
     align-items: center;
-}
+    }
 
 .videoresume { 
     grid-row: 6 / 7; 
     grid-column: 4 / 5;
     text-align: center; 
     align-items: center;
-}
+    }
 
 /* Home.html Page*/
 
-.htext {
-    display: block;
-    width: 800px;
-    padding: 0px;
-    margin: 15px;
+.hwrapper{
+    display: grid;
+	grid-template-columns: 2% 1fr 3fr 1fr 2%;
+	grid-template-rows: 70px 50px 50px 250px 70px 70px;
+	grid-gap: 16px;
+}
+.htitle{
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    }
+
+#welcome {
+    color:black;
+    background-color: #88e7b6;
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+    margin: auto; 
+    }
+
+.htext { 
+    grid-row: 4/ 5; 
+    grid-column: 3 / 4;
+    }
+
+.hbaseline {
+    background-color: #172A3A;
+    grid-row: 6/ 7;
+    grid-column: 1 / 6; 
+    display: flex; 
+    align-self: center; 
+    width: 100%; 
+    } 
+
+/*Projects.html Page*/
+
+.pwrapper{
+    display: grid;
+	grid-template-columns: 2% 1fr repeat(2, 2fr) 2%;
+	grid-template-rows: 70px 70px repeat(3, 1fr) 70px; 
+	grid-gap: 16px;
+    }
+
+.pbaseline {
+    background-color: #172A3A;
+    grid-row: 7/ 8;
+    grid-column: 1 / 6; 
+    display: flex; 
+    align-self: center; 
+    width: 100%; 
+    } 
+
+#my_projects{
+    color:black;
+    background-color: #88e7b6;
+    padding: 10px 10px 10px 10px;
+    margin: auto; 
     position: relative;
-    top: 30px;
+    top: 20px;
+    }
+ 
+.ptitle {
+    grid-row: 2/ 3; 
+    grid-column: 3 / 5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+    
+.ptext { 
+    grid-row: 3/ 6; 
+    grid-column: 3 / 5;
+    }
+
+.A1, .A2, .A3, .A4, .A5, .A6, .A7{
+    text-decoration: none;
+    border: none;
+    background-color: #72B0D5;
+    padding: 10px;
+    color: black;
+    margin: auto;
+    }
+
+.linkset{
+    display: flex;
+    justify-content: center;
 }
 
-
+/* Contact.html Page*/
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
+.cwrapper{
+    display: grid;
+	grid-template-columns: 2% repeat(3, 1fr) 2%;
+	grid-template-rows: 70px repeat(7, 1fr) 70px; 
+	grid-gap: 16px;   
+    }

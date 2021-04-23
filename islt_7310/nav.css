@@ -10,7 +10,7 @@
 
 .active a:link {
     background-color: #72B0D5;
-}
+    }
 
 nav {
     justify-content: flex-end;
@@ -21,13 +21,13 @@ nav {
     grid-column: 1 / 6;
     align-items: center;  
     background-color: #172A3A;  
-}
+    }
 
 nav ul {
     list-style-type: none;
     padding: 0px;
     margin: 0; 
-}
+    }
 
 nav ul li {
     float: left;
@@ -35,7 +35,7 @@ nav ul li {
     text-align: center;
     font-weight: bold;
     color: white;
-}
+    }
 
 nav a {
     text-decoration: none;
@@ -45,28 +45,31 @@ nav a {
     width: auto;
     margin: 2px; 
     color:black
-}
+    }
 
 nav a:hover, nav a:focus{
     background-color: #ffffff;
-}
+    }
+
 nav a:active{
     background-color: #172A3A;
     color: white;
-}
+    }
 
 nav ul li ul{
     position: absolute;
     top: 100%;
     display: none;
     z-index: 999;
-}
+    }
+
 nav ul ul li {
-    float: none;
-}
+    float: none;  
+    }
+
 nav ul li:hover ul{
     display: block;
-}
+    }
 
 .hamburger {
     background-color: red; 
@@ -81,13 +84,22 @@ nav ul li:hover ul{
     justify-content: center;
     align-content: center; 
     align-items: center; 
-    
-}
+    }
 
 /*Responsive Media*/
 
 @media screen and (max-width:992px){
    
+    #logo {
+        display: flex;
+        position: absolute;
+        max-width: 100px;
+        margin: 5px;
+        height: 25px;
+        top: 15px;
+        left: 25px; 
+    }
+
     .hamburger {
         display: flex;    
     }
@@ -105,17 +117,52 @@ nav ul li:hover ul{
         text-align: center;
         width: 100%; 
     }
-}
 
-@media screen and (max-width:640px){
-   
-    .hamburger {
-        display: flex; 
+    /*Home Page*/
+    .hwrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 10px; 
     }
 
-    h1{
-        position: absolute;
-        top: -2px;
+    .atext {
+        margin: 20px;
+    }
+
+    /*About Page*/
+    .awrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 5px; 
+    }
+
+    .atext {
+        margin: 20px;
+    }
+
+    a.special {
+    position: relative;
+    top: -25px;
+    }
+
+    /*Projects Page*/
+    .pwrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .ptext{
+        margin: 5px; 
+    }
+    
+}
+ 
+
+@media screen and (max-width:640px){
+   /*All Pages*/
+    .hamburger {
+        display: flex; 
     }
     
     nav ul, nav:active ul {
@@ -131,8 +178,8 @@ nav ul li:hover ul{
         text-align: center;
         width: 100%; 
     }
-  
-    .wrapper{
+    /*About Page*/
+    .awrapper{
         display: flex;
         flex-direction: column;
         margin: 5px;   
@@ -142,7 +189,7 @@ nav ul li:hover ul{
         margin: 5px;
     }
     
-    .title {
+    .atitle {
         display: flex; 
         position: relative;
         height: 30px;
@@ -164,8 +211,29 @@ nav ul li:hover ul{
         margin: 5px; 
     }
 
-    .text {
-        margin: 5px;
+    .atext {
+        margin: 20px;
     }
 
+    #about_me {
+        top: 10px;
     }
+
+/*Reflection Page*/
+    .rwrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;   
+    }
+
+    #edu_journey {
+        max-width: 200px;
+    }
+
+/*Home Page*/
+    .hwrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 5px; 
+    }
+}
