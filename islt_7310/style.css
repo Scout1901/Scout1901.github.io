@@ -12,14 +12,7 @@ h1 {
     background-color: #88e7b6;
     padding: 10px 10px 10px 10px;
     width: 150px;
-    margin: 10px; 
-    height: 30px;
-}
-
-.navbar {
-    background-color: #172A3A;
-    grid-row: 1 / 2;
-    grid-column: 1 / 6;   
+    margin: auto; 
 }
 
 .baseline {
@@ -40,9 +33,10 @@ h1 {
     align-items: center;
     width: 100%;
     padding: 10px;
+    height: 20px; 
 }
 
-a#special{
+a.special{
     text-decoration: none;
     border: none;
     background-color: #72B0D5;
@@ -152,6 +146,10 @@ p#p5{
 }
 
 
+    
+    
+    
+    
     
     
     
