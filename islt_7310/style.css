@@ -41,7 +41,12 @@ a.special{
     border: none;
     background-color: #72B0D5;
     padding: 10px;
-    color: black
+    color: black;
+    margin: auto;
+    display:flex;
+    max-width: 100px;
+    justify-content: center; 
+
 }
 
 #logo {
