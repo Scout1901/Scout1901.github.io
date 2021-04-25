@@ -13,6 +13,8 @@
     <head>
         <meta charset="utf-8">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Home Page</title>
         
         <link rel="stylesheet" href="style.css">
@@ -25,20 +27,21 @@
 
     <body class="hwrapper">
         <nav class="navbar">
-            <ul>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" class="hamburger"/>
+            <ul class="hamitems">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li class="active"><a href="about.html">About</a></li>
                 <li class= "active"><a href="projects.html">Projects</a>
-                    <ul>
-                        <li class="active"><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
+                    <ul class="submenu">
+                        <li class="active"><a href="#">City Lab</a></li>
+                        <li><a href="#">The Building Blocks of Life</a></li>
+                        <li><a href="#">Digital Media for Teaching</a></li>
                     </ul>
                 </li> 
                 <li class="active"><a href="reflection.html">Reflection</a></li>
                 <li class= "active"><a href="#contact.html">Contact</a></li>   
             </ul>
-            <a href="#" class="hamburger"></a>
         </nav>
 
         <header class="htitle">

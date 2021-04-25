@@ -81,9 +81,9 @@ nav ul li:hover ul{
         display: flex;
         position: absolute;
         max-width: 100px;
-        margin: 5px;
+        margin: 10px;
         height: 25px;
-        top: 25px;
+        top: 20px;
         left: 25px; 
     }
 
@@ -142,7 +142,12 @@ nav ul li:hover ul{
 
     .hamitems{ display: none}
     .navbar input:checked ~ .hamitems {display:block;}
-
+    
+    nav ul li ul {
+        z-index: 999;
+        right: 430px;
+        top: -5px;
+    }
 
     /*Home Page*/
     .hwrapper{
@@ -151,8 +156,15 @@ nav ul li:hover ul{
         margin: 10px; 
     }
 
-    .atext {
-        margin: 20px;
+    .hbaseline{
+        display: block;
+        bottom: 0px;
+        position: relative; 
+
+    }
+
+    .htext{
+        font-size: 14pt;
     }
 
     /*About Page*/
@@ -164,11 +176,23 @@ nav ul li:hover ul{
 
     .atext {
         margin: 20px;
+        font-size: 14pt;
     }
 
     a.special {
     position: relative;
     top: -25px;
+    }
+
+    #Erin {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 20%;
+        height: auto;
+        border: solid black 5px;
+        position: relative;
+        top: 30px;
     }
 
     /*Projects Page*/
@@ -180,10 +204,36 @@ nav ul li:hover ul{
 
     .ptext{
         margin: 5px; 
+        font-size: 14pt;
     }
-    
-}
  
+    #CL_logo{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 20%;
+        height: auto;
+        border: solid black 5px;
+        position: relative;
+        top: 30px;
+    }
+/*
+    #DNA{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 20%;
+        height: auto;
+        border: solid black 5px;
+        position: relative;
+        top: 1000px;
+    }
+*/
+
+/*Reflection*/
+    .rtext{
+        font-size: 14pt; 
+    }
 
 @media screen and (max-width:640px){
    /*All Pages*/
@@ -206,7 +256,7 @@ nav ul li:hover ul{
         display: inline-block;
         color: white;
         font-style: normal;
-        font-size: 1.2em;
+        font-size: 3em;
         padding: 10px;
     }
 
@@ -219,10 +269,21 @@ nav ul li:hover ul{
         padding: 5px;
         width: 70px;
         margin: 0; 
-        color:black
+        color:black;
+        position: relative;
+        top: 5px;
+        left: -10px
+        }
+    
+    .hamburger {
+        display: block;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
+        opacity: 0;
         }
 
-        .hamitems{
+    .hamitems{
             display: flex;
             flex-direction: column;
             top: 70px;
@@ -232,26 +293,15 @@ nav ul li:hover ul{
 
     .hamitems{ display: none}
     .navbar input:checked ~ .hamitems {display:block;}
-    
-    .hamburger {
-        display: block;
-        height: 50px;
-        width: 50px;
+
+    nav ul li ul {
         z-index: 999;
-        opacity: 0;
+        right: 430px;
+        top: -5px;
     }
 
     /*About Page*/
-    .awrapper{
-        display: flex;
-        flex-direction: column;
-        margin: 5px;   
-    }
 
-    nav a{
-        margin: 5px;
-    }
-    
     .atitle {
         display: flex; 
         position: relative;
@@ -265,12 +315,24 @@ nav ul li:hover ul{
         max-width: 100px;
         margin: 5px;
         height: 25px;
-        top: 25px;
+        top: 30px;
         left: 25px;   
+    }
+
+    #Erin {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 20%;
+        height: auto;
+        border: solid black 5px;
+        position: relative;
+        top: 40px;
     }
 
     .atext {
         margin: 20px;
+        font-size: 16pt; 
     }
 
     #about_me {
@@ -284,14 +346,28 @@ nav ul li:hover ul{
         margin: 10px;   
     }
 
-    #edu_journey {
+    #edu_journey{
         max-width: 200px;
     }
 
+    .rtext{
+        font-size: 16pt;
+    }
+
 /*Home Page*/
-    .hwrapper {
+    .hwrapper{
         display: flex;
         flex-direction: column;
         margin: 5px; 
     }
+
+    .htext{
+        font-size: 16pt;
+    }
+
+/*Projects Page*/
+    .ptext{
+        font-size: 16pt; 
+    }
+}
 }
