@@ -71,20 +71,7 @@ nav ul li:hover ul{
     display: block;
     }
 
-.hamburger {
-    background-color: red; 
-    display: none;
-    border: none;
-    width: 30px;
-    height: 25px;
-    z-index: 100;
-    padding: 10px;
-    grid-row: 1 / 2;
-    grid-column: 4 / 5;
-    justify-content: center;
-    align-content: center; 
-    align-items: center; 
-    }
+.navbar label, .hamburger {display:none;}
 
 /*Responsive Media*/
 
@@ -96,13 +83,17 @@ nav ul li:hover ul{
         max-width: 100px;
         margin: 5px;
         height: 25px;
-        top: 15px;
+        top: 25px;
         left: 25px; 
     }
 
     .hamburger {
-        display: flex;    
+        display: block;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
     }
+
     
     nav ul, nav:active ul {
         display: none; 
@@ -117,6 +108,40 @@ nav ul li:hover ul{
         text-align: center;
         width: 100%; 
     }
+
+    .navbar label, hamburger {
+        display: block;
+        color: white;
+        font-style: normal;
+        font-size: 3em;
+        padding: 0;
+        position: absolute;
+        right: 33px;
+    }
+
+    .hamitems a{
+        width: 70px;
+        border-top: 1px solid #333;
+        text-decoration: none;
+        display: block;
+        border: 3px solid #72B0D5;
+        padding: 5px;
+        width: 70px;
+        margin: 0; 
+        color:black
+        }
+
+    .hamitems{
+        display: flex;
+        flex-direction: column;
+        top: 70px;
+        right: -305px;
+        z-index: 999;
+    }
+
+    .hamitems{ display: none}
+    .navbar input:checked ~ .hamitems {display:block;}
+
 
     /*Home Page*/
     .hwrapper{
@@ -161,10 +186,7 @@ nav ul li:hover ul{
 
 @media screen and (max-width:640px){
    /*All Pages*/
-    .hamburger {
-        display: flex; 
-    }
-    
+
     nav ul, nav:active ul {
         display: none; 
         position: absolute;
@@ -178,6 +200,38 @@ nav ul li:hover ul{
         text-align: center;
         width: 100%; 
     }
+
+    .navbar label, hamburger {
+        display: inline-block;
+        color: white;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .hamitems a{
+        width: 70px;
+        border-top: 1px solid #333;
+        text-decoration: none;
+        display: block;
+        border: 3px solid #72B0D5;
+        padding: 5px;
+        width: 70px;
+        margin: 0; 
+        color:black
+        }
+
+        .hamitems{
+            display: flex;
+            flex-direction: column;
+            top: 70px;
+            right: -305px;
+            z-index: 999;
+        }
+
+    .hamitems{ display: none}
+    .navbar input:checked ~ .hamitems {display:block;}
+
     /*About Page*/
     .awrapper{
         display: flex;
@@ -204,11 +258,6 @@ nav ul li:hover ul{
         height: 25px;
         top: 25px;
         left: 25px;   
-    }
-
-    .hamburger{
-        display: flex; 
-        margin: 5px; 
     }
 
     .atext {

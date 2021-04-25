@@ -254,4 +254,4 @@ a.special{
 	grid-template-columns: 2% repeat(3, 1fr) 2%;
 	grid-template-rows: 70px repeat(7, 1fr) 70px; 
 	grid-gap: 16px;   
-    }
+}
