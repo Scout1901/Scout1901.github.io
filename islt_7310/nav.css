@@ -92,6 +92,7 @@ nav ul li:hover ul{
         height: 50px;
         width: 50px;
         z-index: 999;
+        opacity: 0;
     }
 
     
@@ -231,6 +232,14 @@ nav ul li:hover ul{
 
     .hamitems{ display: none}
     .navbar input:checked ~ .hamitems {display:block;}
+    
+    .hamburger {
+        display: block;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
+        opacity: 0;
+    }
 
     /*About Page*/
     .awrapper{
