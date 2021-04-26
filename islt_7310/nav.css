@@ -12,6 +12,10 @@
     background-color: #72B0D5;
     }
 
+.navbar{
+    font-family: 'Quicksand', sans-serif;
+}
+
 nav {
     justify-content: flex-end;
     margin: 0;
@@ -83,7 +87,7 @@ nav ul li:hover ul{
         max-width: 100px;
         margin: 10px;
         height: 25px;
-        top: 20px;
+        top: 10px;
         left: 25px; 
     }
 

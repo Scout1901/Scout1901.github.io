@@ -7,6 +7,10 @@
     website except those related to navigation.
 */  
 
+#hidden_name{
+    display: none; 
+}
+
 .copyright {
     grid-row: 9 / 10; 
     grid-column: 2 / 5;
@@ -16,6 +20,8 @@
     width: 100%;
     padding: 10px;
     height: 20px; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 90%;
     }
 
 #logo {
@@ -33,6 +39,7 @@
     width: 100%; 
     margin: 20px; 
     height: 10px; 
+    font-family: 'Quicksand', sans-serif;
     }
 
 #Erin {
@@ -99,6 +106,7 @@ p#p2, p#p3, p#p4, p#p5{
 .rtext { 
     grid-row: 3/ 6; 
     grid-column: 2 / 5;
+    font-family: 'Open Sans', sans-serif;
         }
 
 .rtitle{
@@ -108,6 +116,7 @@ p#p2, p#p3, p#p4, p#p5{
     display: flex;
     justify-content: center;
     align-items: center; 
+    font-family: 'Quicksand', sans-serif;
     }
 
 #edu_journey{
@@ -133,6 +142,7 @@ a.special{
     justify-content: center; 
     position: relative;
     top: -100px; 
+    font-family: 'Quicksand', sans-serif;
     }
 
 #about_me {
@@ -168,12 +178,15 @@ a.special{
     display: flex;
     justify-content: center;
     align-items: center; 
+    font-family: 'Quicksand', sans-serif;
     }
 
 .atext { 
     grid-row: 3/ 6; 
     grid-column: 3 / 5;
     font-size: 12pt; 
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family:'Times New Roman', Times, serif
     }
 
 .resume { 
@@ -201,19 +214,22 @@ a.special{
 .htitle{
     grid-row: 3 / 4;
     grid-column: 3 / 4;
+    font-family: 'Quicksand', sans-serif;
     }
 
 #welcome {
     color:black;
     background-color: #88e7b6;
     padding: 10px 10px 10px 10px;
-    width: 150px;
+    width: 200px;
     margin: auto; 
+    text-align: center; 
     }
 
 .htext { 
     grid-row: 4/ 5; 
     grid-column: 3 / 4;
+    font-family: 'Open Sans', sans-serif;
     }
 
 .hbaseline {
@@ -259,11 +275,13 @@ a.special{
     display: flex;
     justify-content: center;
     align-items: center; 
+    font-family: 'Quicksand', sans-serif;
     }
     
 .ptext { 
     grid-row: 3/ 6; 
     grid-column: 3 / 5;
+    font-family: 'Open Sans', sans-serif;
     }
 
 .A1, .A2, .A3, .A4, .A5, .A6, .A7{
@@ -288,3 +306,51 @@ a.special{
 	grid-template-rows: 70px repeat(7, 1fr) 70px; 
 	grid-gap: 16px;   
 }
+
+@media print {
+    *{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;   
+    }
+    
+    .navbar, 
+    #Erin, 
+    #about_me,
+    #logo,
+    .videoresume, 
+    .resume{
+        display: none; 
+    }
+
+    #hidden_name{
+        display:block;
+        margin-bottom: 0;
+        border: none; 
+        text-align: center; 
+        background-color: none;
+    }
+
+    a[href="http:"]::after {
+        content: " [" attr(href)"]";
+    } 
+
+    @page {
+        margin: 1in;  
+    }
+
+    .awrapper{
+        display: block;
+    }
+    
+    p{
+        orphans: 3;
+        widows: 3; 
+    }  
+
+    .copyright{
+        font-family:'Times New Roman', Times, serif; 
+    }
+}
+
