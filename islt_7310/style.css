@@ -431,7 +431,7 @@ a.special{
         widows: 3; 
     }  
 
-    a.text{
+    .atext{
         font-family:'Times New Roman', Times, serif;
         font-size: 12pt;
     }
