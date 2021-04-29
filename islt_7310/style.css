@@ -12,17 +12,45 @@
 }
 
 .copyright {
-    grid-row: 9 / 10; 
-    grid-column: 2 / 5;
     color: #ffffff; 
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    height: 20px; 
     font-family: 'Open Sans', sans-serif;
     font-size: 90%;
     }
+
+.linkedin{
+    color: #ffffff;
+
+}
+
+.phone{
+    color: #ffffff;
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70%;
+}
+
+.email{
+    color: #ffffff;
+    text-decoration: none; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70%;
+}
+
+#icons8{
+    font-size: 70%;
+    font-family: 'Open Sans', sans-serif;
+    color: white; 
+}
+
+
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 20px;
+    padding-right: 20px; 
+}
 
 #logo {
     grid-row: 1 / 2;
@@ -41,6 +69,9 @@
     height: 10px; 
     font-family: 'Quicksand', sans-serif;
     }
+  
+
+
 
 #Erin {
     grid-row: 3 / 5;
@@ -61,6 +92,7 @@
     margin: 25px;
     border: solid black 2px; 
 }
+
 
 /*
 #DNA{
@@ -167,7 +199,7 @@ a.special{
 .awrapper{
     display: grid;
 	grid-template-columns: 2% repeat(3, 1fr) 2%;
-	grid-template-rows: 70px 1fr repeat(4, 2fr) 70px; 
+	grid-template-rows: 70px 1fr repeat(4, 2fr) 70px 70px; 
 	grid-gap: 16px;
     }
 
@@ -208,13 +240,21 @@ a.special{
 .hwrapper{
     display: grid;
 	grid-template-columns: 2% 1fr 3fr 1fr 2%;
-	grid-template-rows: 70px 50px 50px 250px 70px 70px;
-	grid-gap: 16px;
+	grid-template-rows: 70px 50px 50px 300px 70px 70px;
+	grid-gap: 16px; 
+   /* background-image: url("leaves.png"); */
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
+
 .htitle{
     grid-row: 3 / 4;
     grid-column: 3 / 4;
     font-family: 'Quicksand', sans-serif;
+    z-index: 999;
+    display:flex;
+    align-self: center;
+    justify-self: center;
     }
 
 #welcome {
@@ -224,22 +264,53 @@ a.special{
     width: 200px;
     margin: auto; 
     text-align: center; 
+    position: relative;
+    top: 15px;
     }
 
 .htext { 
     grid-row: 4/ 5; 
     grid-column: 3 / 4;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    z-index: 999; 
+    color: white;
+    padding: 10px;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    z-index: 50; 
     }
 
 .hbaseline {
     background-color: #172A3A;
     grid-row: 6/ 7;
     grid-column: 1 / 6; 
-    display: flex; 
+    display: grid; 
     align-self: center; 
     width: 100%; 
+    background-image: url("stars.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
     } 
+
+.content-box{
+    background-color: #172A3A;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-row: 3/ 5; 
+    grid-column: 3 / 4;
+    justify-self: center; 
+    border: solid 10px #88e7b6;
+    align-self: center;
+}
+
+.hsubtitle{
+    text-decoration: underline;
+    position: relative;
+    top: 10px;
+}
 
 /*Projects.html Page*/
 
