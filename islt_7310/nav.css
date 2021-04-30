@@ -9,7 +9,7 @@
 /*Main Menu Base Styles*/
 
 .navlink a:link {
-    background-color: #72B0D5;
+    background-color: black;
     }
 
 .navbar{
@@ -21,7 +21,7 @@
     grid-row: 1 / 2; 
     grid-column: 1 / 6;
     align-items: center;  
-    background-color: #172A3A; 
+    background-color: black; 
 }
 
 .hamitems {
@@ -33,25 +33,24 @@
     position: relative;
     text-align: center;
     font-weight: bold;
-    color: white;
+    color: #187ab3;
     }
 
 .navbar a {
     text-decoration: none;
     display: inline-block;
-    border: 3px solid #72B0D5;
     padding: 10px 10px 10px 10px;
     width: auto;
     margin: 2px; 
-    color:black
+    color: white;
     }
 
 .navbar a:hover, .navbar a:focus{
-    background-color: #ffffff;
+    background-color: #187ab3;
     }
 
 .navbar a:active{
-    background-color: #172A3A;
+    background-color: black;
     color: white;
     }
 
@@ -124,11 +123,12 @@ li:hover .submenu{
     .navlink a{
         text-decoration: none;
         display: block;
-        border: 3px solid #72B0D5;
+        border: 3px solid #187ab3;
+        background-color: black;
         padding: 5px;
         width: 70px;
         margin: 0; 
-        color:black;
+        color: white;
     }
 
     .hamitems{
@@ -190,10 +190,9 @@ li:hover .submenu{
 
     .hamitems a{
         width: 70px;
-        border-top: 1px solid #333;
         text-decoration: none;
         display: block;
-        border: 3px solid #72B0D5;
+        border: 3px solid black;
         padding: 5px;
         width: 70px;
         margin: 0; 
