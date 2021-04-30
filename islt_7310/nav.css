@@ -6,17 +6,14 @@
     Description: This is the style.css file for my portfolio of e-learning development work. It contains all stylistic components for my website navigation.
 */  
 
-/*Menu Base Styles*/
+/*Main Menu Base Styles*/
 
-.active a:link {
+.navlink a:link {
     background-color: #72B0D5;
     }
 
 .navbar{
     font-family: 'Quicksand', sans-serif;
-}
-
-nav {
     justify-content: flex-end;
     margin: 0;
     padding: 20px;
@@ -24,16 +21,14 @@ nav {
     grid-row: 1 / 2; 
     grid-column: 1 / 6;
     align-items: center;  
-    background-color: #172A3A;  
-    }
+    background-color: #172A3A; 
+}
 
-nav ul {
+.hamitems {
     list-style-type: none;
-    padding: 0px;
-    margin: 0; 
     }
 
-nav ul li {
+.navlink {
     float: left;
     position: relative;
     text-align: center;
@@ -41,7 +36,7 @@ nav ul li {
     color: white;
     }
 
-nav a {
+.navbar a {
     text-decoration: none;
     display: inline-block;
     border: 3px solid #72B0D5;
@@ -51,46 +46,54 @@ nav a {
     color:black
     }
 
-nav a:hover, nav a:focus{
+.navbar a:hover, .navbar a:focus{
     background-color: #ffffff;
     }
 
-nav a:active{
+.navbar a:active{
     background-color: #172A3A;
     color: white;
     }
 
-nav ul li ul{
+.submenu{
     position: absolute;
     top: 100%;
     display: none;
     z-index: 999;
     width:max-content;
+    list-style: none;
+    left: -110px;
     }
 
-nav ul ul li {
-    float: none;  
-    }
-
-nav ul li:hover ul{
+li:hover .submenu{
     display: block;
     }
 
 .navbar label, .hamburger {display:none;}
 
-/*Responsive Media*/
+
+#logo1, #logo2, #logo3, #logo4, #logo5{
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    background-color: #88e7b6;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: none;
+    font-weight: bold;
+    text-align: center; 
+    padding: 10px 10px 10px 10px;
+    max-width: 150px;
+    width: 100%; 
+    margin: 20px; 
+    height: 10px; 
+    font-family: 'Quicksand', sans-serif;
+    }
+  
+
+/*Responsive Navbar*/
 
 @media screen and (max-width:992px){
-   
-  /*  #logo {
-        display: flex;
-        position: relative;
-        max-width: 100px;
-        margin: 10px;
-        height: 25px;
-        top: -95px;
-        left: 15px; 
-    }*/
 
     .hamburger {
         display: block;
@@ -99,19 +102,9 @@ nav ul li:hover ul{
         z-index: 999;
         opacity: 0;
     }
-    
-    nav ul, nav:active ul {
-        display: none; 
-        position: absolute;
-    }
 
-    nav ul:hover {
+    .navbar .hamitems:hover {
         display: block;
-    }
-
-    nav li {
-        text-align: center;
-        width: 100%; 
     }
 
     .navbar label, hamburger {
@@ -124,7 +117,11 @@ nav ul li:hover ul{
         right: 33px;
     }
 
-    .hamitems a{
+    .navlink {
+        width: 100%; 
+    }
+
+    .navlink a{
         text-decoration: none;
         display: block;
         border: 3px solid #72B0D5;
@@ -132,139 +129,49 @@ nav ul li:hover ul{
         width: 70px;
         margin: 0; 
         color:black;
-        top: 15px;
-        position: relative;
-        }
+    }
 
     .hamitems{
-        display: flex;
+        display: none;
         flex-direction: column;
         top: 70px;
         right: -305px;
         z-index: 999;
     }
 
-    .hamitems{ display: none}
+    .hamitems, .navbar:active .hamitems {
+        display: none; 
+        position: absolute;
+    }
+
     .navbar input:checked ~ .hamitems {display:block;}
     
-    nav ul li ul {
+    .submenu {
         z-index: 999;
-        right: 430px;
+        left: -120px;
         top: -1px;
     }
 
-    /*Home Page*/
-    .hwrapper{
-        display: flex;
-        flex-direction: column;
-        margin: 10px; 
-    }
-
-    .hbaseline{
-        display: flex;
-        justify-content:center;
-        padding-bottom: 10px; 
-    }
-
-    .htext{
-        font-size: 14pt;
-    }
-
-    .content-box{
-        margin: 10px;
-        width: 95%;
+    #logo1, #logo5{
         position: relative;
-        top: -35px;
+        top: -100px;
     }
 
-    /*About Page*/
-    .awrapper{
-        display: flex;
-        flex-direction: column;
-        margin: 5px; 
-    }
-
-    .atext {
-        margin: 20px;
-        font-size: 14pt;
-    }
-
-    a.special {
-    position: relative;
-    top: -25px;
-    }
-
-    #Erin {
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        width: 30%;
-        height: auto;
-        border: solid black 5px;
+    #logo2, #logo3{
         position: relative;
-        top: -50px;
+        top: -175px;
     }
 
-    #video-resume{
+    #logo4{
         position: relative;
-        left: 290px;
-    }
-
-    /*Projects Page*/
-    .pwrapper{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-    }
-
-    .ptext{
-        margin: 5px; 
-        font-size: 14pt;
-    }
- 
-    #CL_logo{
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        width: 20%;
-        height: auto;
-        border: solid black 5px;
-        position: relative;
-        top: 30px;
-    }
-/*
-    #DNA{
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        width: 20%;
-        height: auto;
-        border: solid black 5px;
-        position: relative;
-        top: 1000px;
-    }
-*/
-
-/*Reflection*/
-    .rtext{
-        font-size: 14pt; 
+        top: -2px;
     }
 
 @media screen and (max-width:640px){
    /*All Pages*/
 
-    nav ul, nav:active ul {
-        display: none; 
-        position: absolute;
-    }
-
-    nav ul:hover {
+    .hamitems:hover {
         display: block;
-    }
-
-    nav li {
-        text-align: center;
-        width: 100%; 
     }
 
     .navbar label, hamburger {
@@ -273,6 +180,12 @@ nav ul li:hover ul{
         font-style: normal;
         font-size: 3em;
         padding: 10px;
+    }
+
+    .hamitems{
+        top: 70px;
+        right: -305px;
+        z-index: 1000;
     }
 
     .hamitems a{
@@ -286,7 +199,6 @@ nav ul li:hover ul{
         margin: 0; 
         color:black;
         position: relative;
-        top: 5px;
         left: -10px
         }
     
@@ -298,98 +210,14 @@ nav ul li:hover ul{
         opacity: 0;
         }
 
-    .hamitems{
-            display: flex;
-            flex-direction: column;
-            top: 70px;
-            right: -305px;
-            z-index: 999;
-        }
-
-    .hamitems{ display: none}
-    .navbar input:checked ~ .hamitems {display:block;}
-
-    nav ul li ul {
-        z-index: 999;
-        right: 430px;
-        top: -5px;
-    }
-
-    /*About Page*/
-
-    .atitle {
-        display: flex; 
+     #logo2{
         position: relative;
-        height: 30px;
-        width: 100%; 
+        top: -145px;
     }
 
-    #logo {
-        display: flex;
-        position: absolute;
-        max-width: 100px;
-        margin: 5px;
-        height: 25px;
-        top: 25px;
-        left: 25px;   
-    }
-
-    #Erin {
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        width: 20%;
-        height: auto;
-        border: solid black 5px;
+    #logo4{
         position: relative;
-        top: 40px;
-    }
-
-    .atext {
-        margin: 20px;
-        font-size: 16pt; 
-    }
-
-    #about_me {
-        top: 10px;
-    }
-
-/*Reflection Page*/
-    .rwrapper{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;   
-    }
-
-    #edu_journey{
-        max-width: 200px;
-    }
-
-    .rtext{
-        font-size: 16pt;
-    }
-
-/*Home Page*/
-    .hwrapper{
-        display: flex;
-        flex-direction: column;
-        margin: 5px; 
-    }
-
-    .htext{
-        font-size: 16pt;
-    }
-
-    .content-box {
-        margin: 10px;
-        width: 93%;
-        position:relative;
-        top: 5px;
-    }
-
-/*Projects Page*/
-    .ptext{
-        font-size: 16pt; 
+        top: -255px;
     }
 }
 }
