@@ -88,6 +88,11 @@ li:hover .submenu{
     height: 10px; 
     font-family: 'Quicksand', sans-serif;
     }
+
+#logo1 a, #logo2 a, #logo3 a, #logo4 a, #logo5 a{
+    text-decoration: none; 
+    color: black; 
+    }
   
 
 /*Responsive Navbar*/
