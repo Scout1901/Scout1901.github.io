@@ -20,6 +20,9 @@
     font-size: 95%;
     text-align: center; 
     }
+.footer-content a{
+    color: #88e7b6;
+}
 
 #linkedin{
     color: #ffffff;
