@@ -146,7 +146,7 @@
     }
 
 #about_me {
-    color: #f4e3cf;
+    color: #fff1d6;
     background-color: #728560;
     padding: 10px 10px 10px 10px;
     min-width: 150px;
@@ -179,9 +179,9 @@
 #Rtext, #VRtext{
     text-decoration: none;
     border: none;
-    background-color: #d0684e;
+    background-color:#E19F8E;
     padding: 10px;
-    color: #f4e3cf;
+    color: #000e02;
     margin: auto;
     font-family: 'Quicksand', sans-serif;
     max-width: 150px; 
@@ -244,7 +244,7 @@
         } 
 
 #my_projects{
-    color: #f4e3cf;
+    color: #fff1d6;
     background-color: #728560;
     padding: 10px 10px 10px 10px;
     margin: auto; 
@@ -272,9 +272,9 @@
 .A1, .A2, .A3, .A4, .A5, .A6, .A7{
     text-decoration: none;
     border: none;
-    background-color: #d0684e;
+    background-color: #DB8A76;
     padding: 10px;
-    color: #f4e3cf;
+    color: black;
     margin: auto;
     max-width: 200px; 
     text-align: center;
@@ -340,13 +340,13 @@ table, th, td{
 }
 
 #ptable tr:nth-child(odd){
-    background-color: #728560;
-    color: #f4e3cf;
+    background-color: #172214;
+    color: #fff1d6;
 }
 
 #ptable th{
-    background-color: black;
-    color: #f4e3cf;
+    background-color: #728560;
+    color: #fff1d6;
 }
 
  #ptable tr:nth-child(even){
@@ -407,7 +407,7 @@ p#p2, p#p3, p#p4, p#p5{
     }
 
 #edu_journey{
-    color: #f4e3cf;
+    color: #fff1d6;
     background-color: #728560;
     padding: 10px 10px 10px 10px;
     margin: auto; 
@@ -447,7 +447,7 @@ p#p2, p#p3, p#p4, p#p5{
     }
 
 #contact{
-    color: #f4e3cf;
+    color: #fff1d6;
     background-color: #728560;
     padding: 10px 10px 10px 10px;
     margin: auto; 
@@ -491,8 +491,8 @@ button{
     font-size: 16pt;
     font-family: 'Open Sans', sans-serif;
     margin: 10px; 
-    background-color:#d0684e;
-    color: #f4e3cf;
+    background-color:#DB8A76;
+    color: black;
 }
 
 
