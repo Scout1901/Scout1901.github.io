@@ -186,7 +186,7 @@
 
 #gecko{
     align-self: center;
-    max-width: 800px;
+    max-width: 600px;
 }
 
 /*Responsive Media*/
@@ -202,13 +202,24 @@
     #logo2{
         font-size: 20pt;
     }
+
+    #gecko{
+        max-width: 500px;
+    }
 }
+
+
 
 @media screen and (max-width:655px){
 
-/*992 p1 Page*/
+/*655 p1 Page*/
 
     #logo2{
         font-size: 16pt;
     }
+
+    #gecko{
+        max-width: 400px;
+    }
+
 }
