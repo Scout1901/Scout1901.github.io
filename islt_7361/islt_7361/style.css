@@ -1,0 +1,202 @@
+/* 
+    Author: Erin Weaver
+    Create Date: 28 March 2021
+    Revised: 17 April 2021
+    
+    Description: This is the style.css file for my portfolio of digital media work. It contains all stylistic components for my portfolio 
+    website except those related to navigation.
+*/  
+
+/*Footer*/
+
+.footer-content {
+    color: #f4e3cf; 
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 95%;
+    text-align: center; 
+    }
+.footer-content a{
+    color: #E8BF40;
+}
+
+#linkedin{
+    color: #f4e3cf;
+    height: 30px;
+    transition: all 1s ease-in-out;
+}
+
+#phone-icon, #email-icon{
+    color: #f4e3cf; 
+    transition: all 1s ease-in-out;
+    height: 20px;
+    width: 20px; 
+}
+
+#phone-icon:hover, #email-icon:hover, #linkedin:hover{
+    transform: scale(1.3);
+}
+
+#icons8{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#E8BF40; 
+}
+
+/*"Nav"*/
+
+.navbar{
+    margin: 0;
+    height: 70px;
+    align-items: center;  
+    background-color: #000E02; 
+    border-bottom: solid 10px #728560;
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.links{
+    font-family: 'Josefin sans', sans-serif;
+    align-self: center;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14pt;
+}
+
+.links li{
+    display: inline-flex;  
+    padding: 10px; 
+}
+
+.links li a{
+    text-decoration: none; 
+    background-color: #E19F8E;
+    color: black;
+    padding: 10px;
+    margin: auto;
+    border-radius: 8px 0px; 
+    }
+
+.links a:hover, .links a:focus{
+    background-color: #728560;
+    color:#fff1d6;
+    padding: 10px;
+    margin: auto;
+    border-radius: 8px 0px; 
+    }
+
+.links a:active{
+    background-color: #000E02;
+    color:#fff1d6;
+    }
+
+#logo2{ 
+    border: none;
+    font-weight: 600;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 18pt;
+    color: #E19F8E; 
+    align-self: center;
+    }
+
+
+/*All project1.html Page*/
+
+.awrapper{
+    background-color:#f4e3cf;
+    display: flex;
+    flex-direction: column;
+    margin: 5px; 
+    } 
+
+#projects {
+    color: #fff1d6;
+    background-color: #728560;
+    padding: 10px 10px 10px 10px;
+    min-width: 150px;
+    max-width: 250px; 
+    margin: auto; 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px 0;
+}
+
+.atext { 
+    font-family: 'Open Sans', sans-serif;
+    align-self: center;
+    padding: 20px; 
+    font-size: 14pt;
+    }
+
+#Erin {
+    width: 20%;
+    height: auto;
+    border: solid black 5px;
+    align-self: center;
+    }
+
+#Rtext{
+    text-decoration: none;
+    border: none;
+    background-color:#E19F8E;
+    padding: 10px;
+    color: #000e02;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 150px; 
+    font-size: 14pt;
+    padding: 10px;
+    margin: auto;
+    border-radius: 8px 0px; 
+    }
+
+.resume { 
+    text-align: center; 
+    }
+    
+#paper{
+    height: 100px;
+    width: auto;
+    padding: 10px;
+}
+
+.abaseline {
+    background-color: #172214;
+    align-self: center; 
+    width: 100%; 
+    border-top: solid 10px #728560;
+} 
+
+.atitle{
+    padding: 20px;
+}
+
+#gecko{
+    align-self: center;
+    max-width: 800px;
+}
+
+/*Responsive Media*/
+
+@media screen and (max-width:992px){
+
+/*992 P1 Page*/
+
+    #Erin{
+        min-width: 100px;
+    }
+
+    #logo2{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width:655px){
+
+/*992 p1 Page*/
+
+    #logo2{
+        font-size: 16pt;
+    }
+}
