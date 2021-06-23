@@ -184,10 +184,15 @@
     padding: 20px;
 }
 
-#gecko{
+#gecko, #screenshot{
     align-self: center;
     max-width: 800px;
 }
+
+#audio{
+    align-self: center;
+}
+
 
 /*Responsive Media*/
 
@@ -203,11 +208,10 @@
         font-size: 20pt;
     }
 
-    #gecko{
+    #gecko, #screenshot, #audio{
         max-width: 500px;
     }
 }
-
 
 
 @media screen and (max-width:655px){
@@ -218,7 +222,7 @@
         font-size: 16pt;
     }
 
-    #gecko{
+    #gecko, #screenshot, #audio{
         max-width: 400px;
     }
 
