@@ -111,7 +111,19 @@
     color:black;
 }
 
-.links2 li a{
+.links2 a{
+    color: #3c7408;
+}
+
+.link3 a:active{
+    color: #E19F8E;
+}
+
+.link3 a:hover, .link3 a:focus{
+    color:black;
+}
+
+.link3 a{
     color: #3c7408;
 }
 
