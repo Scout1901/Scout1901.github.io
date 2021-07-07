@@ -100,8 +100,16 @@
     align-self: center;
     }
 
+#videothumb{
+    align-self: center;
+}
+
 
 /*All project1.html Page*/
+
+h3{
+    color: #b44e34;
+}
 
 .link2 a:active{
     color: #E19F8E;
