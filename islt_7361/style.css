@@ -107,6 +107,10 @@
 
 /*All project1.html Page*/
 
+.nearpod{
+    align-self: center; 
+}
+
 h3{
     color: #b44e34;
 }
