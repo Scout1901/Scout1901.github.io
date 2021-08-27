@@ -1,0 +1,223 @@
+/* 
+    Author: Erin Weaver
+    Create Date: 28 March 2021
+    Revised: 17 April 2021
+    
+    Description: This is the style.css file for my portfolio of e-learning development work. It contains all stylistic components for my website navigation.
+*/  
+
+/*Main Menu Base Styles*/
+
+.navbackground{
+    background-color: #000E02;
+    border-bottom: solid 10px #728560;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navlink a:link {
+    background-color: #000E02;
+    }
+
+.navbar{
+    font-family: 'Josefin sans', sans-serif;
+    justify-content: flex-end;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+#hamitems {
+    list-style-type: none;
+    }
+
+.navlink {
+    float: left;
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16pt;
+    color: #728560;
+    }
+
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    margin: 2px; 
+    color: #f4e3cf;
+    }
+
+.navbar a:hover, .navbar a:focus{
+    background-color: #728560;
+    border-radius: 8px 0px; 
+    }
+
+.navbar a:active{
+    background-color: #000E02;
+    color:#f4e3cf;
+    }
+
+.submenu{
+    position: absolute;
+    top: 100%;
+    display: none;
+    z-index: 999;
+    width:max-content;
+    list-style: none;
+    }
+
+.submenu li a{
+    position: relative;
+    left: -165px; 
+}
+
+li:hover .submenu{
+    display: block;
+    }
+
+.navbar label, #hamburger {display:none;}
+
+
+#logo{
+    display: flex;
+    align-items: center;
+    border: none;
+    font-weight: 600;
+    text-align: center; 
+    padding: 10px 10px 10px 20px;
+    width: max-content;
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 24pt;
+    }
+
+#logo a{
+    text-decoration: none; 
+    color: #d0684e; 
+    }
+
+/*Responsive Navbar*/
+
+@media screen and (max-width:992px){
+
+    #hamburger {
+        display: block;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
+        opacity: 0;
+    }
+
+    .navbar{
+        height: 30px; 
+    }
+
+    .navbar #hamitems:hover {
+        display: block;
+    }
+
+    .navbar label, #hamburger {
+        display: block;
+        color: #f4e3cf;
+        font-style: normal;
+        font-size: 3em;
+        padding: 0;
+        position: absolute;
+        right: 33px;
+    }
+
+    .navlink {
+        width: 100%; 
+    }
+
+    .navlink a{
+        text-decoration: none;
+        display: block;
+        background-color:#000E02;
+        padding: 5px;
+        width: 100px;
+        margin: 0; 
+        color: #f4e3cf;
+    }
+
+    #hamitems{
+        display: none;
+        flex-direction: column;
+        top: 50px;
+        right: -402px;
+        z-index: 999;
+    }
+
+    #hamitems, .navbar:active #hamitems {
+        display: none; 
+        position: absolute;
+    }
+
+    .navbar input:checked ~ #hamitems {display:block;}
+    
+    .submenu li a{
+        z-index: 999;
+        left: -175px;
+        top: -30px;
+        width: 125px;
+    }
+
+    #logo1{
+        font-size: 24pt;   
+    }
+
+@media screen and (max-width:640px){
+   /*All Pages*/
+
+    #hamitems:hover {
+        display: block;
+    }
+
+    .navbar label, #hamburger {
+        display: inline-block;
+        color:#f4e3cf;
+        font-style: normal;
+        font-size: 3em;
+    }
+
+    #hamitems{
+        top: 55px;
+        right: -360px;
+        z-index: 1000;
+    }
+
+    #hamitems a{
+        width: 70px;
+        text-decoration: none;
+        display: block;
+        border: 3px solid #000E02;
+        padding: 5px;
+        width: 80px;
+        margin: 0; 
+        color:#f4e3cf;
+        position: relative;
+        left: -10px
+        }
+    
+    .submenu li a{
+        position: relative;
+        left: -190px; 
+        top: -35px;
+    } 
+    
+    #hamburger {
+        display: block;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
+        opacity: 0;
+        }
+
+    #logo{
+        font-size: 20pt;
+    }
+}
+}
