@@ -9,12 +9,9 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play To_Catch_a_Food_Thief.</tw-noscript></noscript></tw-story>
-<tw-storydata name="To_Catch_a_Food_Thief" startnode="1" creator="Twine" creator-version="2.3.14" ifid="D281A4A9-4195-4C48-9FCF-6D65B34424CB" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="title"] {
- background-image: url("thief.png");
- background-size:cover;
- max-height: 100%;
- max-width:100%;
- background-repeat: no repeat; 
+<tw-storydata name="To_Catch_a_Food_Thief" startnode="1" creator="Twine" creator-version="2.3.14" ifid="D281A4A9-4195-4C48-9FCF-6D65B34424CB" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="title"] img{
+	max-width: 100%;
+  	max-width: 100%; 
 }
 
 tw-story{
@@ -26,7 +23,7 @@ tw-passage{
 }
 
 tw-story[tags~="title"] tw-sidebar{
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 tw-link, .enchantment-link{
@@ -50,25 +47,11 @@ tw-link, .enchantment-link{
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Page" tags="title" position="75,100" size="100,100">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
+	audio.src = 'Music.mp3';
+	audio.loop = true;
+	audio.play();
+	audio.volume = 0.3;</script><tw-passagedata pid="1" name="Title Page" tags="title" position="75,101" size="100,100">[&lt;img src=&quot;file:///Users/erinbuchanan/Desktop/Twine_Project/thief.png&quot;&gt;]
 
 [[Begin Game-&gt;Introduction 1]]</tw-passagedata><tw-passagedata pid="2" name="Choice 1" tags="" position="550,250" size="100,100">=||=
 Dr. Gene instructs you to use her lab equipment to compare the suspect’s saliva samples with the saliva she collected off the discarded soda can and get back to her with results.
@@ -229,7 +212,7 @@ Oops, the gel solidified in the beaker and now you can&#39;t pour it into the ca
 |==|
 
 [[Try Again-&gt;Choice 4]]</tw-passagedata><tw-passagedata pid="16" name="Wrong Answer 5#2" tags="" position="522,1226" size="100,100">|=
-Oops, you put the solution in while the casting tray while it was too hot, and it melted the masking tape leaking agar all over the table! 
+Oops, you put the solution in the casting tray while it was too hot, and it melted the masking tape leaking agar all over the table! 
 
 You&#39;ll have to re-make it. 
 |=
@@ -244,11 +227,16 @@ Dr. Gene tells you that, based on previous evidence, she has already narrowed th
 
 =|=
 [&lt;img src=&quot;Sus1.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
+Suspect #1
 =|=
 [&lt;img src=&quot;Sus2.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
+Suspect #2
 =|=
 [&lt;img src=&quot;Sus3.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
+Suspect #3
 |==|
+
+
 Dr. Gene tells you that she has managed to collect a saliva sample from all three suspects by taking their discarded cups/silverware out of the trash. 
 
 Collecting saliva from the trash seems a bit desperate, but you&#39;re worried about the doctor&#39;s mental state after all this time! Dr. Gene really does seem stressed... and hungry... You decide to help her catch the thief. 
@@ -277,11 +265,11 @@ You plug in the machine to its power source and notice that Dr. Gene has already
 What do your wells look like when loaded?
 
 |=
-[&lt;img src=&quot;WrongWell.png&quot; width=&quot;300&quot; height=&quot;213&quot;&gt;]
+[&lt;img src=&quot;WrongWell.png&quot; width=&quot;500&quot; height=&quot;268&quot;&gt;]
 
 [[Option 1-&gt;Fail 8a]]
 |=
-[&lt;img src=&quot;RightWell.png&quot; width=&quot;300&quot; height=&quot;213&quot;&gt;]
+[&lt;img src=&quot;RightWell.png&quot; width=&quot;500&quot; height=&quot;268&quot;&gt;]
 
 [[Option 2-&gt;Correct Answer 8b]]
 |==|</tw-passagedata><tw-passagedata pid="21" name="Choice 8a" tags="" position="600,1625" size="100,100">You load the wells with DNA, turn the machine on and and let it run. 
@@ -292,7 +280,7 @@ It&#39;s time to view your results!
 
 [[Analyze Results-&gt;Fail 8b]]</tw-passagedata><tw-passagedata pid="22" name="Fail 8a" tags="" position="450,1775" size="100,100">You turn the machine on and run it. 
 
-Unfortunately you loaded the DNA in the wells incorrectly and the results are too difficult to read! 
+Unfortunately, you loaded the DNA into the wells incorrectly and the results are too difficult to read! 
 
 ||=
 You failed to catch the thief!
@@ -306,7 +294,7 @@ Dr. Gene is disappointed (and still hungry), but encourages you to try again!
 
 [&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/0/06/Agarose_gel_electrophoresis_DNA.jpg&quot; width=&quot;640&quot; height=&quot;360&quot;&gt;]
 
-Ready to turn the machine on a run it?
+Ready to turn the machine on and run it?
 
 [[Run Machine-&gt;Choice 9a]]</tw-passagedata><tw-passagedata pid="24" name="Choice 9a" tags="" position="250,1925" size="100,100">The machine is set to 92 volts. 
 
@@ -349,9 +337,9 @@ The DNA fragments are not separated enough to read. Better run it a little longe
 [[Run for another 35 minutes-&gt;Choice 10b]]
 |=
 [&lt;img src=&quot;https://cdn.pixabay.com/photo/2012/04/01/19/21/exclamation-mark-24144_1280.png&quot; width=&quot;300&quot; height=&quot;300&quot;&gt;]
-|==|</tw-passagedata><tw-passagedata pid="28" name="Choice 10a" tags="" position="250,2200" size="100,100">Based on these results, which suspect do you tell Dr. Gene is her lunch thief?
+|==|</tw-passagedata><tw-passagedata pid="28" name="Choice 10a" tags="" position="275,2200" size="100,100">Based on these results, which suspect do you tell Dr. Gene is her lunch thief?
 
-[&lt;img src=&quot;Sus1.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&lt;img src=&quot;Final_Gel&quot; width=&quot;400&quot; height=&quot;343&quot;&gt;]
 |=
 [&lt;img src=&quot;Sus1.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
 [[Suspect #1-&gt;Fail 10]]
@@ -384,18 +372,20 @@ Dr. Gene is disappointed (and still hungry), but encourages you to try again!
 |=
 [&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
 |==|</tw-passagedata><tw-passagedata pid="31" name="Choice 10b" tags="" position="400,2200" size="100,100">||=
-It worked! Your results are perfect! It&#39;s time to analyze them and catch a thief!
+It worked! Your results are perfect! It&#39;s time to analyze them and catch this thief once and for all!
 
 
 [[Analyze Results-&gt;Choice 10a]]
 |=
 [&lt;img src=&quot;https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676_1280.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
-|==|</tw-passagedata><tw-passagedata pid="32" name="Fail 10" tags="" position="175,2325" size="100,100">Oh no! So close! But after all that work, you failed to analyze the results properly and accused the wrong suspect. 
+|==|</tw-passagedata><tw-passagedata pid="32" name="Fail 10" tags="" position="200,2325" size="100,100">Oh no! So close! But after all that work, you failed to analyze the results properly and accused the wrong suspect. 
 
-Dr. Gene presented your evidence and it quickly fell apart- it turns out your proposed thief had a solid alibi after all! 
+Dr. Gene presented your evidence to her boss and it quickly fell apart. It turns out your proposed thief had a solid alibi after all! 
 
 ||=
-In addition, the false accusations took attention off of the real culprit and the doctor&#39;s lunch began disappearing more frequently than ever. Dr. Gene is disappointed (and still hungry), but encourages you to try again! 
+In addition, the false accusations took attention off of the real culprit and the doctor&#39;s lunch began disappearing more frequently than ever! 
+
+Dr. Gene is disappointed (and still hungry), but encourages you to try again! 
 |=
 [&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
 |==|
@@ -404,13 +394,13 @@ In addition, the false accusations took attention off of the real culprit and th
 Yay! You caught the thief! 
 
 Dr. Gene is over the moon about your work on this case! She used your evidence to confront the suspect. 
-|=
-[&lt;img src=&quot;Final_Gel.png&quot; width=&quot;286&quot; height=&quot;400&quot;&gt;]
-|==|
 
 When faced with such incriminating data, she confessed immediately and transferred to another department. 
 
-Dr. Gene can put her lunch in the staff fridge now every single day without fear of thievery- and it&#39;s all thanks to you!</tw-passagedata><tw-passagedata pid="34" name="Introduction 1" tags="" position="200,100" size="200,100">
+Dr. Gene can put her lunch in the staff fridge every single day now without fear of thievery- and it&#39;s all thanks to you! Great job!
+|=
+[&lt;img src=&quot;BigSmile.png&quot; width=&quot;286&quot; height=&quot;400&quot;&gt;]
+|==|</tw-passagedata><tw-passagedata pid="34" name="Introduction 1" tags="" position="200,100" size="200,100">
 |||=
 Dr. Gene is angry. For months now, a mystery thief has been stealing her lunch from the staff lounge while she works as a Biologist in an onsite lab. You accepted a position as her lab assistant this semester and have had a front row seat to watch the drama unfold. 
 
