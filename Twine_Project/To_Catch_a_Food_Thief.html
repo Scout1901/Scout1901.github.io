@@ -25,7 +25,11 @@ tw-passage{
   color: #fff0e4;
 }
 
-tw-link{
+tw-story[tags~="title"] tw-sidebar{
+  visibility: hidden; 
+}
+
+tw-link, .enchantment-link{
   color:#80d9dd;
 }
 
@@ -33,15 +37,13 @@ tw-link{
  color: #fe6f6f;
 }
 
-.visited {
-	color: #80d9dd;
+.visited{
+   color: #80d9dd;
 }
 
-
-tw-story[tags~="title"] tw-sidebar{
-  visibility: hidden; 
+.visited:hover{
+   color: #fe6f6f;
 }
-
 
 
 
@@ -94,7 +96,7 @@ Dr. Gene shakes her head, but gives you another chance.
 
 &quot;What technique would help to separate genetic material based on size and electric charge?&quot; she hints. 
 
-[[Try Again-&gt;Choice 1]]
+[[Try Again-&gt;Choice 1]] 
 =|=
 [&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
 |==|</tw-passagedata><tw-passagedata pid="4" name="Choice 2" tags="" position="550,375" size="100,100">Great! Dr. Gene is satisfied with your plan. She hands you the four samples and leaves the lab.  
@@ -123,7 +125,7 @@ You think back to your most recent lab readings...
 
 What’s something that could be extracted from saliva that might help identify a person? 
 
-[[Try Again-&gt;Choice 2]]
+[[Try Again-&gt;Choice 2]] 
 |==|</tw-passagedata><tw-passagedata pid="6" name="Choice 3" tags="" position="600,525" size="100,100">Wonderful idea! You isolate the DNA in each sample successfully!
 
 What do you do next?
@@ -146,7 +148,7 @@ You see that Dr. Gene has already lined the casting tray for the electrophoresis
 
 [&lt;img src=&quot;electro_tray.jpg&quot; width=&quot;300&quot; height=&quot;213&quot;&gt;]
 
-[[Continue-&gt;Choice 4]]</tw-passagedata><tw-passagedata pid="8" name="Wrong Answer 3" tags="" position="675,678" size="100,100">=|=
+[[Continue-&gt;Choice 4]]</tw-passagedata><tw-passagedata pid="8" name="Wrong Answer 3" tags="" position="675,675" size="100,100">=|=
 [&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/07/19/16/44/question-2519654_1280.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
 =||=
 Hmm...something doesn&#39;t feel right... 
@@ -186,9 +188,12 @@ Correct! You mix up the agar solution in a glass beaker and boil it on a hot pla
 
 [[Continue-&gt;Choice 5]]
 |==|
-</tw-passagedata><tw-passagedata pid="12" name="Choice 5" tags="" position="600,1075" size="100,100">After the solution is mixed and boiled, what do you do next? 
-
-
+</tw-passagedata><tw-passagedata pid="12" name="Choice 5" tags="" position="600,1075" size="100,100">||=
+After the solution is mixed and boiled, what do you do next?
+|=
+[&lt;img src=&quot;https://cdn.pixabay.com/photo/2018/08/20/22/55/faq-3620230_1280.png&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;]
+|==|
+ 
 [[Remove the solution from heat and leave it in the beaker for 40-50 minutes so it can harden before continuing-&gt;Wrong Answer 5#1]]
 
 
@@ -208,15 +213,13 @@ It leaves perfect holes in the gel for you to load your DNA into!
 |==|</tw-passagedata><tw-passagedata pid="14" name="Choice 6" tags="" position="600,1350" size="100,100">Next, you need to place the casting tray into the electrophoresis apparatus. 
 
 How do you place it? 
-
-
 |=
-[&lt;img src=&quot;Right.png&quot; width=&quot;355&quot; height=&quot;274&quot;&gt;]
+[&lt;img src=&quot;Right.png&quot; width=&quot;600&quot; height=&quot;427&quot;&gt;]
 
 [[Option A-&gt;Choice 7a]]
 
 |=
-[&lt;img src=&quot;Right.png&quot; width=&quot;355&quot; height=&quot;274&quot;&gt;]
+[&lt;img src=&quot;Wrong.png&quot; width=&quot;600&quot; height=&quot;427&quot;&gt;]
 
 [[Option B-&gt;Choice 7b]]
 |==|</tw-passagedata><tw-passagedata pid="15" name="Wrong Answer 5#1" tags="" position="375,1225" size="100,100">|=
@@ -262,9 +265,12 @@ It&#39;s time to view your results!
 
 You plug in the machine to its power source and notice that Dr. Gene has already added a clear liquid into the machine. It comes up just high enough to cover the casting tray you placed completely. Should you leave the liquid in the machine?
 
+
 [[No, dump it out. She must have been sanitizing it between uses. The liquid will interfere with the electric current so it needs to be completely dried out-&gt;Choice 8a]] 
 
+
 [[Yes, leave it in because it&#39;s probably the buffer solution that allows the electric current to flow through the gel freely-&gt;Choice 8b]]
+
 
 [[It doesn&#39;t matter either way. The electric current of the machine will not be affected by the liquid-&gt;Choice 8a]] </tw-passagedata><tw-passagedata pid="20" name="Choice 8b" tags="" position="450,1625" size="100,100">Next you need to load the wells with DNA and turn the machine on! 
 
@@ -294,7 +300,9 @@ You failed to catch the thief!
 Dr. Gene is disappointed (and still hungry), but encourages you to try again! 
 |=
 [&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
-|==|</tw-passagedata><tw-passagedata pid="23" name="Correct Answer 8b" tags="" position="300,1775" size="100,100">The wells are loaded. 
+|==|
+
+[[Start Over-&gt;Title Page]] </tw-passagedata><tw-passagedata pid="23" name="Correct Answer 8b" tags="" position="300,1775" size="100,100">The wells are loaded. 
 
 [&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/0/06/Agarose_gel_electrophoresis_DNA.jpg&quot; width=&quot;300&quot; height=&quot;213&quot;&gt;]
 
@@ -310,29 +318,48 @@ How long do you run it before analyzing the results?
 
 [[45 Minutes-&gt;Correct Answer 9a]]
 
-[[10 Minutes-&gt;Wrong Choice 9b]]</tw-passagedata><tw-passagedata pid="25" name="Correct Answer 9a" tags="" position="249,2051" size="100,100">You run the machine for 45 minutes and then check for banding. 
+[[10 Minutes-&gt;Wrong Choice 9b]]</tw-passagedata><tw-passagedata pid="25" name="Correct Answer 9a" tags="" position="250,2050" size="100,100">||=
+You run the machine for 45 minutes and then check for banding. 
 
 It worked! Your results are perfect! 
 
 It&#39;s time to analyze them and catch this lunch thief once and for all!
 
-[[Analyze Results-&gt;Choice 10a]]</tw-passagedata><tw-passagedata pid="26" name="Fail 9a" tags="" position="101,2051" size="100,100">Oh no! You let the machine run too long and some of the DNA fragments traveled too far! 
 
+[[Analyze Results-&gt;Choice 10a]]
+|=
+[&lt;img src=&quot;https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676_1280.png&quot; width=&quot;300&quot; height=&quot;300&quot;&gt;]
+|==|</tw-passagedata><tw-passagedata pid="26" name="Fail 9a" tags="" position="100,2050" size="100,100">Oh no! You let the machine run too long and some of the DNA fragments traveled too far! 
+
+||=
 The results are impossible to read. 
 
 You failed to catch the thief!
 
-Dr. Gene is disappointed (and still hungry), but encourages you to try again! </tw-passagedata><tw-passagedata pid="27" name="Wrong Choice 9b" tags="" position="400,2050" size="100,100">Oh no! It looks like you didn&#39;t quite run the gel long enough. 
+Dr. Gene is disappointed (and still hungry), but encourages you to try again! 
+|=
+[&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
+|==|
+[[Start Over-&gt;Title Page]] </tw-passagedata><tw-passagedata pid="27" name="Wrong Choice 9b" tags="" position="400,2050" size="100,100">||=
+Oh no! It looks like you didn&#39;t quite run the gel long enough. 
 
 The DNA fragments are not separated enough to read. Better run it a little longer!
 
-[[Run for another 35 minutes-&gt;Choice 10b]]</tw-passagedata><tw-passagedata pid="28" name="Choice 10a" tags="" position="247,2199" size="100,100">Based on these results, which suspect do you tell Dr. Gene is her lunch thief?
 
+[[Run for another 35 minutes-&gt;Choice 10b]]
+|=
+[&lt;img src=&quot;https://cdn.pixabay.com/photo/2012/04/01/19/21/exclamation-mark-24144_1280.png&quot; width=&quot;300&quot; height=&quot;300&quot;&gt;]
+|==|</tw-passagedata><tw-passagedata pid="28" name="Choice 10a" tags="" position="250,2200" size="100,100">Based on these results, which suspect do you tell Dr. Gene is her lunch thief?
+|=
+[&lt;img src=&quot;Sus1.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
 [[Suspect #1-&gt;Fail 10]]
-
+|=
+[&lt;img src=&quot;Sus1.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
 [[Suspect #2-&gt;Fail 10]] 
-
-[[Suspect #3-&gt;WIN!]]</tw-passagedata><tw-passagedata pid="29" name="Fail 8b" tags="" position="625,1775" size="100,100">Unfortunately, you emptied out the buffer solution needed to run the machine! There was nothing to pass the current of electricity across the agar gel. 
+|=
+[&lt;img src=&quot;Sus1.png&quot; width=&quot;168&quot; height=&quot;400&quot;&gt;]
+[[Suspect #3-&gt;WIN!]]
+|==|</tw-passagedata><tw-passagedata pid="29" name="Fail 8b" tags="" position="625,1775" size="100,100">Unfortunately, you emptied out the buffer solution needed to run the machine! There was nothing to pass the current of electricity across the agar gel. 
 
 ||=
 You failed to catch the thief!
@@ -340,7 +367,9 @@ You failed to catch the thief!
 Dr. Gene is disappointed (and still hungry), but encourages you to try again! 
 |=
 [&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
-|==|</tw-passagedata><tw-passagedata pid="30" name="Fail 9c" tags="" position="750,1625" size="100,100">Unfortunately, you put the casting tray in wrong and the electricity flow through the gel was backwards! The fragments of DNA were pushed off the gel and you did not get any results to analyze.
+|==|
+
+[[Start Over-&gt;Title Page]] </tw-passagedata><tw-passagedata pid="30" name="Fail 9c" tags="" position="750,1625" size="100,100">Unfortunately, you put the casting tray in wrong and the electricity flow through the gel was backwards! The fragments of DNA were pushed off the gel and you did not get any results to analyze.
 
 [&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/0/06/Agarose_gel_electrophoresis_DNA.jpg&quot; width=&quot;300&quot; height=&quot;213&quot;&gt;]
 
@@ -350,8 +379,16 @@ You failed to catch the thief!
 Dr. Gene is disappointed (and still hungry), but encourages you to try again! 
 |=
 [&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
-|==|</tw-passagedata><tw-passagedata pid="31" name="Choice 10b" tags="" position="401,2199" size="100,100">It worked! Your results are perfect! It&#39;s time to analyze them and catch a thief!
-[[Analyze Results-&gt;Choice 10a]]</tw-passagedata><tw-passagedata pid="32" name="Fail 10" tags="" position="175,2325" size="100,100">Oh no! So close! But after all that work, you failed to analyze the results properly and accused the wrong suspect. 
+|==|
+
+[[Start Over-&gt;Title Page]] </tw-passagedata><tw-passagedata pid="31" name="Choice 10b" tags="" position="400,2200" size="100,100">||=
+It worked! Your results are perfect! It&#39;s time to analyze them and catch a thief!
+
+
+[[Analyze Results-&gt;Choice 10a]]
+|=
+[&lt;img src=&quot;https://cdn.pixabay.com/photo/2013/07/12/17/00/approved-151676_1280.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
+|==|</tw-passagedata><tw-passagedata pid="32" name="Fail 10" tags="" position="175,2325" size="100,100">Oh no! So close! But after all that work, you failed to analyze the results properly and accused the wrong suspect. 
 
 Dr. Gene presented your evidence and it quickly fell apart- it turns out your proposed thief had a solid alibi after all! 
 
@@ -359,7 +396,9 @@ Dr. Gene presented your evidence and it quickly fell apart- it turns out your pr
 In addition, the false accusations took attention off of the real culprit and the doctor&#39;s lunch began disappearing more frequently than ever. Dr. Gene is disappointed (and still hungry), but encourages you to try again! 
 |=
 [&lt;img src=&quot;Disappointed.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
-|==|</tw-passagedata><tw-passagedata pid="33" name="WIN!" tags="" position="325,2325" size="100,100">|=
+|==|
+
+[[Start Over-&gt;Title Page]] </tw-passagedata><tw-passagedata pid="33" name="WIN!" tags="" position="325,2325" size="100,100">|=
 Yay! You caught the thief! 
 
 Dr. Gene is over the moon about your work on this case! She used your evidence to confront the suspect. 
@@ -373,12 +412,13 @@ Dr. Gene can put her lunch in the staff fridge now every single day without fear
 |||=
 Dr. Gene is angry. For months now, a mystery thief has been stealing her lunch from the staff lounge while she works as a Biologist in an onsite lab. You accepted a position as her lab assistant this semester and have had a front row seat to watch the drama unfold. 
 
-It started in August with a piece of fruit or a cookie missing from the doctor&#39;s lunch. By November the thief had escalated to frustratingly bold acts. What kind of monster steals someone&#39;s leftover Thanksgiving turkey anyway? At this point, Dr. Gene was missing all or part of her lunch several times a week! None of the other faculty were ever missing items, so she took the thievery as a direct challenge. She&#39;d tried dousing her food with hot sauce, setting up a hidden camera, and even enlisting the help of the dean to catch the culprit, but to no avail. Every plan was twarted by the clever thief. Dr. Gene&#39;s lunches seemed doomed to go missing! 
-
-[[[Continue-&gt;Introduction 2]]]
 |=
 [&lt;img src=&quot;Angry.png&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;]
-|==|</tw-passagedata><tw-passagedata pid="35" name="Introduction 2" tags="" position="425,100" size="200,100">||=
+|==|
+
+It started in August with a piece of fruit or a cookie missing from the doctor&#39;s lunch. By November the thief had escalated to frustratingly bold acts. What kind of monster steals someone&#39;s leftover Thanksgiving turkey anyway? At this point, Dr. Gene was missing all or part of her lunch several times a week! None of the other faculty were ever missing items, so she took the thievery as a direct challenge. She&#39;d tried dousing her food with hot sauce, setting up a hidden camera, and even enlisting the help of the dean to catch the culprit, but to no avail. Every plan was twarted by the clever thief. Dr. Gene&#39;s lunches seemed doomed to go missing! 
+
+[[[Continue-&gt;Introduction 2]]]</tw-passagedata><tw-passagedata pid="35" name="Introduction 2" tags="" position="425,100" size="200,100">||=
 After trying and trying to battle her foe, Dr. Gene finally caught a big break. She found a clue!  A discarded can of soda laying at the top of a trash can. 
 
 Dr. Gene brought a special type of soda for lunch every day- a type that was VERY hard to find. When she saw the same type of soda resting in the trash, she knew that the can must have been stolen from //her// lunch. 
