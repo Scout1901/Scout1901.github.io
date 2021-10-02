@@ -47,8 +47,10 @@ tw-link, .enchantment-link{
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio').autoplay;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
 	audio.src = 'Music.mp3';
+	audio.autoplay = true;
+	audio.load(); 
 	audio.loop = true;
 	audio.play();
 	audio.volume = 0.3;</script><tw-passagedata pid="1" name="Title Page" tags="title" position="75,101" size="100,100">[&lt;img src=&quot;thief.png&quot;&gt;]
