@@ -51,8 +51,8 @@
     border-top: solid 10px #728560;
     text-align: center;
     color:#f4e3cf; 
+    font-family: 'Josefin sans', sans-serif; 
 }  
-.quickbuttons
 .baseline a:link, .baseline a:active{
     color:#E19F8E;
 }
@@ -68,7 +68,7 @@
     flex-direction: column;
     margin:0;
     background-color: #f4e3cf;
-    /*background-image: url("Images/flowers-com.jpg");*/
+    background-image: url("Images/flowers-com.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     opacity: 90%;
@@ -118,12 +118,6 @@
     margin-bottom: 100px;
 }
 
-.quickbuttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 #Erin {
     width: 20%;
     border: solid black 5px;
@@ -153,6 +147,11 @@
     padding: 10px;
 }
 
+.home_pic{
+    width: 20%; 
+    margin: 20px; 
+}
+
 /*Full Program Page*/
 #ctable{
     border-spacing: 5px; 
@@ -180,7 +179,7 @@
 
 /*Full-Sized Projects Page*/ 
 .main_link a:link, .main_link a:active{
-        color: #5a694c;
+        color: #A9462D;
         text-decoration: none;
     }
     
@@ -202,22 +201,23 @@
     margin: 5px;
 }
 
-.comp{
+.comp_border{
+    border: solid black 5px;
+    margin: 25px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; 
 }
 
-.comp_border{
-    border: solid black 5px;
-    margin: 25px; 
-}
-
 .comp_border1{
     border: solid black 5px;
     margin: 25px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
 }
 
 #comp_title{
@@ -234,23 +234,23 @@
     font-size: 16pt;
 }
 
-.artifacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20px;
-}
 
 .Ar_title{
-    text-decoration: none;
-    border: none;
+    color: #fff1d6;
     background-color: #728560;
     padding: 10px;
-    color: #fff1d6;
-    margin: auto;
-    max-width: 200px; 
+    min-width: 150px;
+    max-width: 500px; 
     text-align: center;
-    }
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px 0;
+    align-self: center;
+}
+
+.project_pic{
+    width: 25%;
+    margin: 20px; 
+}
 
 .linkset{
     display: flex;
@@ -298,28 +298,12 @@ table, th, td{
     padding: 5px; 
 }
 
-    /*Full-Sized Digital Media Page*/
-    .videothumb{
-        text-align: center;
-    }
+/*Full-Sized Digital Media Page*/
 
-/* Work Projects Template
-.CL_lefttext, .BBL_lefttext, .DM_lefttext{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
+.videothumb{
+    text-align: center;
 }
 
-#CL_logo, #DNA, #Gecko{
-    width: 30%;
-    height: 30%;
-    border: solid black 2px; 
-}
-
-#CL-Program{
-    margin-top: 0px;
-}
-*/
 
 /*Full-Sized Reflection.html Page*/
 
