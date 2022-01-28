@@ -185,12 +185,12 @@ li:hover .submenu{
         color:#f4e3cf;
         font-style: normal;
         font-size: 3em;
-        top: -8px;
+        top: -5px;
     }
 
     #hamitems{
-        top: 55px;
-        right: -360px;
+        top: 30px;
+        left: -160px;
         z-index: 1000;
     }
 
@@ -204,13 +204,12 @@ li:hover .submenu{
         margin: 0; 
         color:#f4e3cf;
         position: relative;
-        left: -10px
+        width: 150px;
         }
     
     .submenu li a{
-        position: relative;
-        left: -190px; 
-        top: -35px;
+        left: -5px; 
+        top: -5px;
     } 
     
     #hamburger {
@@ -219,7 +218,6 @@ li:hover .submenu{
         width: 50px;
         z-index: 999;
         opacity: 0;
-        top: -1px
         }
 
     #logo{
