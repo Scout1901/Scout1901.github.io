@@ -16,17 +16,13 @@
     justify-content: space-between;
 }
 
-.navlink a:link {
-    background-color: #000E02;
-    }
-
 .navbar{
     font-family: 'Josefin sans', sans-serif;
-    justify-content: flex-end;
     padding-right: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
+    align-items: center; 
+    padding-top: 5px; 
+    position: relative;
+    display: inline-block;  
 }
 
 #hamitems {
@@ -34,17 +30,20 @@
     }
 
 .navlink {
-    float: left;
     position: relative;
+    display: inline-block;
     text-align: center;
     font-weight: 400;
     font-size: 16pt;
     color: #728560;
     }
 
+.navlink a:link {
+    background-color: #000E02;
+    }
+
 .navbar a {
     text-decoration: none;
-    display: inline-block;
     padding: 10px 10px 10px 10px;
     width: auto;
     margin: 2px; 
@@ -63,21 +62,21 @@
 
 .submenu{
     position: absolute;
-    top: 100%;
     display: none;
     z-index: 999;
     width:max-content;
     list-style: none;
+    left: -150px; 
+    top: 30px;
     }
 
 .submenu li a{
-    position: relative;
-    left: -165px; 
-}
+    display: block;  
+} 
 
 li:hover .submenu{
     display: block;
-    }
+}
 
 .navbar label, #hamburger {display:none;}
 
@@ -113,10 +112,7 @@ li:hover .submenu{
         font-style: normal;
         font-size: 3em;
         padding: 0;
-        position: absolute;
-        right: 13px;
     }
-
 
     .navbar #hamitems:hover {
         display: block;
@@ -129,8 +125,8 @@ li:hover .submenu{
         font-size: 3em;
         padding: 0;
         position: absolute;
-        right: 20px;
-        top: -5px;
+        left: 5px;
+        top: -5px; 
     }
 
     .navlink {
@@ -145,28 +141,32 @@ li:hover .submenu{
         width: 100px;
         margin: 0; 
         color: #f4e3cf;
+        width: 125px;
     }
 
     #hamitems{
         display: none;
         flex-direction: column;
-        top: 50px;
-        right: -402px;
         z-index: 999;
     }
 
     #hamitems, .navbar:active #hamitems {
         display: none; 
         position: absolute;
+        left: -130px;
+        top: 35px; 
     }
 
     .navbar input:checked ~ #hamitems {display:block;}
     
     .submenu li a{
         z-index: 999;
-        left: -175px;
-        top: -30px;
-        width: 125px;
+        width: 150px;
+    }
+
+    .submenu{
+        left: -200px;
+        top: -5px;
     }
 
     #logo1{

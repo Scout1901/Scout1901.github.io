@@ -234,7 +234,6 @@
     font-size: 16pt;
 }
 
-
 .Ar_title{
     color: #fff1d6;
     background-color: #728560;
@@ -249,7 +248,17 @@
 
 .project_pic{
     width: 25%;
-    margin: 20px; 
+    margin: auto; 
+}
+
+.project_pic2{
+    width: 80%;
+    margin: auto; 
+}
+
+.project_pic3{
+    width: 40%;
+    margin: auto; 
 }
 
 .linkset{
@@ -378,23 +387,43 @@ button{
         width: 85%;
     }
 
+    .home_pic{
+        width: 20%; 
+    }
+
+    #Erin{
+       width: 20%; 
+    }
+
     /*992 Projects Page*/
-    #CL_logo{
-        display: none;
+  
+    .project_pic2{
+        width: 68%;
     }
 
-    #DNA{
-    display: none;
+    .project_pic3 {
+        width: 32%;
     }
 
-    #Gecko{
-    display:none;  
+    .comp_border{
+        border: solid black 5px;
+        margin: 25px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+    
+    .comp_border1{
+        border: solid black 5px;
+        margin: 25px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
     }
 
-    #pcaption{
-        font-size: 16pt;
-    }
-}
 
 @media screen and (max-width:640px){
     /*640 Home Page*/
@@ -407,4 +436,37 @@ button{
         margin-bottom: 40px;
         width: 85%;
     }
-}
+
+    .home_pic{
+        width: 30%; 
+    }
+
+    #Erin{
+       width: 30%; 
+    }
+
+    /*640 Project Page*/
+    .project_pic2{
+        width: 60%;
+    }
+
+    .project_pic3 {
+        width: 35%;
+    }
+
+    .project_pic{
+        width: 35%;
+    }
+
+    .comp_border{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    .comp_border1{
+        margin-left:auto;
+        margin-right:auto;
+        width: 100%;
+    }
+}}
