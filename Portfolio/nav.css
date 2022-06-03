@@ -9,8 +9,8 @@
 /*Main Menu Base Styles*/
 
 .navbackground{
-    background-color: #000E02;
-    border-bottom: solid 10px #728560;
+    background-color: #09181F;
+    border-bottom: solid 10px #EB875C;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,11 +35,11 @@
     text-align: center;
     font-weight: 400;
     font-size: 16pt;
-    color: #728560;
+    color: #20536F;
     }
 
 .navlink a:link {
-    background-color: #000E02;
+    background-color: #09181F;
     }
 
 .navbar a {
@@ -47,17 +47,17 @@
     padding: 10px 10px 10px 10px;
     width: auto;
     margin: 2px; 
-    color: #f4e3cf;
+    color: #FFF1D6;
     }
 
 .navbar a:hover, .navbar a:focus{
-    background-color: #728560;
+    background-color: #20536F;
     border-radius: 8px 0px; 
     }
 
 .navbar a:active{
     background-color: #000E02;
-    color:#f4e3cf;
+    color:#FFF1D6;
     }
 
 .submenu{
@@ -94,7 +94,7 @@ li:hover .submenu{
 
 #logo a{
     text-decoration: none; 
-    color: #d0684e; 
+    color: #8FC4E0; 
     }
 
 /*Responsive Navbar*/
@@ -108,7 +108,7 @@ li:hover .submenu{
         z-index: 999;
         opacity: 0;
         display: block;
-        color: #f4e3cf;
+        color: #FFF1D6;
         font-style: normal;
         font-size: 3em;
         padding: 0;
@@ -140,7 +140,7 @@ li:hover .submenu{
         padding: 5px;
         width: 100px;
         margin: 0; 
-        color: #f4e3cf;
+        color: #FFF1D6;
         width: 125px;
     }
 
@@ -182,7 +182,7 @@ li:hover .submenu{
 
     .navbar label, #hamburger {
         display: inline-block;
-        color:#f4e3cf;
+        color:#FFF1D6;
         font-style: normal;
         font-size: 3em;
         top: -5px;
@@ -198,11 +198,11 @@ li:hover .submenu{
         width: 70px;
         text-decoration: none;
         display: block;
-        border: 3px solid #000E02;
+        border: 3px solid #09181F;
         padding: 5px;
         width: 80px;
         margin: 0; 
-        color:#f4e3cf;
+        color:#FFF1D6;
         position: relative;
         width: 150px;
         }
