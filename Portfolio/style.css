@@ -331,6 +331,32 @@ table, th, td{
     text-align: center;
 }
 
+.content-box4{
+    background-color: #FFDD99;
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-self: center; 
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    align-self: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+/*Full-Sized Digital Art Page*/
+.artpic{
+    max-width: 400px;
+}
+
+.artpic2{
+    max-width: 600px; 
+}
+
 
 /*Full-Sized Reflection.html Page*/
 
@@ -340,7 +366,7 @@ table, th, td{
     font-size: 30px;
     }
 
-p#p2, p#p3, p#p4, p#p5{
+p#p2, p#p3, p#p4, p#p5, p#p6{
     text-indent: 50px;
     }
 
