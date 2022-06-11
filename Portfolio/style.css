@@ -61,7 +61,11 @@
 .baseline a:visited, .baseline a:hover{
     color: #FFCF70;
 }
-  
+
+h3{
+    text-decoration: underline;
+}
+
 /*Full-Sized Home Page*/
 
 .hwrapper{
