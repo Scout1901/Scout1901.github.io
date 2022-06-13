@@ -3,7 +3,7 @@
     Create Date: 28 March 2021
     Revised: 17 April 2021
     
-    Description: This is the style.css file for my portfolio of e-learning development work. It contains all stylistic components for my website navigation.
+    Description: This is the nav.css file for my portfolio of e-learning development work. It contains all stylistic components for my website navigation.
 */  
 
 /*Main Menu Base Styles*/
@@ -99,7 +99,7 @@ li:hover .submenu{
 
 /*Responsive Navbar*/
 
-@media screen and (max-width:992px){
+@media screen and (max-width:1130px){
 
     #hamburger {
         display: block;
