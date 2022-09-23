@@ -9,8 +9,8 @@
 /*Main Menu Base Styles*/
 
 .navbackground{
-    background-color: #09181F;
-    border-bottom: solid 10px #EB875C;
+    background-color: #182518;
+    border-bottom: solid 10px #CA7B3F;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +39,7 @@
     }
 
 .navlink a:link {
-    background-color: #09181F;
+    background-color: #182518;
     }
 
 .navbar a {
@@ -51,12 +51,12 @@
     }
 
 .navbar a:hover, .navbar a:focus{
-    background-color: #20536F;
-    border-radius: 8px 0px; 
+    border: solid 2px #9FC19A;
+    padding: 5px; 
     }
 
 .navbar a:active{
-    background-color: #09181F;
+    background-color: #182518;
     color:#FFF1D6;
     }
 
@@ -90,12 +90,12 @@ li:hover .submenu{
     font-family: 'Josefin sans', sans-serif;
     font-size: 24pt;
     align-self: center;
-    }
+}
 
 #logo a{
     text-decoration: none; 
-    color: #8FC4E0; 
-    }
+    color: #9FC19A; 
+}
 
 /*Responsive Navbar*/
 
@@ -136,7 +136,7 @@ li:hover .submenu{
     .navlink a{
         text-decoration: none;
         display: block;
-        background-color:#09181F;
+        background-color:#182518;
         padding: 5px;
         width: 100px;
         margin: 0; 
@@ -173,55 +173,55 @@ li:hover .submenu{
         font-size: 24pt;   
     }
 
-@media screen and (max-width:640px){
-   /*All Pages*/
+    @media screen and (max-width:640px){
+        /*All Pages*/
    
-    #hamitems:hover {
-        display: block;
-    }
-
-    .navbar label, #hamburger {
-        display: inline-block;
-        color:#FFF1D6;
-        font-style: normal;
-        font-size: 3em;
-        top: 5px;
-    }
-
-    #hamitems{
-        top: 30px;
-        left: -160px;
-        z-index: 1000;
-    }
-
-    #hamitems a{
-        width: 70px;
-        text-decoration: none;
-        display: block;
-        border: 3px solid #09181F;
-        padding: 5px;
-        width: 80px;
-        margin: 0; 
-        color:#FFF1D6;
-        position: relative;
-        width: 150px;
-        }
-    
-    .submenu li a{
-        left: -5px; 
-        top: -5px;
-    } 
-    
-    #hamburger {
-        display: block;
-        height: 50px;
-        width: 50px;
-        z-index: 999;
-        opacity: 0;
+        #hamitems:hover {
+            display: block;
         }
 
-    #logo{
-        font-size: 20pt;
+        .navbar label, #hamburger {
+            display: inline-block;
+            color:#FFF1D6;
+            font-style: normal;
+            font-size: 3em;
+            top: 5px;
+        }
+
+        #hamitems{
+            top: 30px;
+            left: -160px;
+            z-index: 1000;
+        }
+
+        #hamitems a{
+            width: 70px;
+            text-decoration: none;
+            display: block;
+            border: 3px solid #182518;
+            padding: 5px;
+            width: 80px;
+            margin: 0; 
+            color:#FFF1D6;
+            position: relative;
+            width: 150px;
+            }
+        
+        .submenu li a{
+            left: -5px; 
+            top: -5px;
+        } 
+        
+        #hamburger {
+            display: block;
+            height: 50px;
+            width: 50px;
+            z-index: 999;
+            opacity: 0;
+            }
+
+        #logo{
+            font-size: 20pt;
+        }
     }
-}
 }
