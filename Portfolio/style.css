@@ -27,6 +27,10 @@
     max-width: 1.5em;
 }
 
+.random-pic{
+    width: 25%; 
+}
+
 .content{
     flex: 1; 
 }
@@ -196,7 +200,7 @@ h3{
 /*Full Resume Page*/
 
 .resumeBox{
-    padding-top: 50px;
+    margin: 50px; 
 }
 
 /*Full Program Page*/

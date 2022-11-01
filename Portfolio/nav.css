@@ -21,6 +21,7 @@
     padding-right: 10px;
     align-items: center; 
     padding-top: 5px; 
+    padding-bottom: 5px; 
     position: relative;
     display: inline-block;  
 }
@@ -45,6 +46,7 @@
 .navbar a {
     text-decoration: none;
     padding: 10px 10px 10px 10px;
+    border: solid 2px #182518;
     width: auto;
     margin: 2px; 
     color: #FFF1D6;
@@ -52,7 +54,7 @@
 
 .navbar a:hover, .navbar a:focus{
     border: solid 2px #9FC19A;
-    padding: 5px; 
+    padding: 10px; 
     }
 
 .navbar a:active{
@@ -67,7 +69,7 @@
     width:max-content;
     list-style: none;
     left: -150px; 
-    top: 30px;
+    top: 32px;
     }
 
 .submenu li a{
