@@ -8,6 +8,40 @@
 */  
 
 /*All Non-Home Pages*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #FFF1D6;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 1em;
+    font-family: 'Josefin sans', sans-serif;;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #182518;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #B34700;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #182518;
+    text-decoration: underline;
+  }
+  
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -41,8 +75,8 @@
     text-align: center;
     font-family: 'Josefin sans', sans-serif;
     align-self: center;
-    margin-top: 30px;
     margin-bottom: 0px;
+    margin-top: 0px; 
     font-size:1.5em; 
 }
 
@@ -200,7 +234,8 @@ h3{
 /*Full Resume Page*/
 
 .resumeBox{
-    margin: 50px; 
+    margin: 50px;
+    margin-top: 0px;  
 }
 
 /*Full Program Page*/
@@ -473,6 +508,7 @@ button{
 
 #contact{
     margin-bottom: 0px; 
+    margin-top: 0px; 
 }
 
 /* Full-Sized Games Page */
