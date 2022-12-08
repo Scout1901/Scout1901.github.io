@@ -67,6 +67,8 @@ ul.breadcrumb {
 
 .content{
     flex: 1; 
+    max-width: 70%;
+    align-self: center;
 }
 
 .title {
@@ -164,9 +166,6 @@ h3{
    flex-direction: column;
    align-items: center; 
    justify-content: center;
-   margin: 50px; 
-   margin-left: 0px; 
-   margin-top: 0px; 
 }
 
 #welcome{
@@ -187,7 +186,7 @@ h3{
 
 .content-box2{
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     text-align: center;
     justify-self: center; 
@@ -199,8 +198,7 @@ h3{
 #Erin {
     width: 25%;
     align-self: center;
-    margin: 50px;
-    margin-right: 0px;  
+    margin: 10px;
 }
 
 #Ltext{
