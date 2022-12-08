@@ -171,6 +171,7 @@ h3{
 #welcome{
     color: #182518;
     font-family: 'Josefin sans', sans-serif;
+    margin-bottom: 0px; 
 }
 
 .content-box{
@@ -424,6 +425,22 @@ table, th, td{
 }
 
 /*Full-Sized Digital Art Page*/
+.ArtFlexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 35px; 
+}
+
+.threed{
+    width: 40%; 
+}
+
+.threed2{
+    width: 10%; 
+}
+
+
 .artpic{
     width: 25%;
 }
