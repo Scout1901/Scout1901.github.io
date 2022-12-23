@@ -528,6 +528,10 @@ button{
 
 /* Full-Sized Games Page */
 
+.source{
+   text-align: center;
+}
+
 .gamepic1{
     width: 25%;
 }
@@ -538,6 +542,10 @@ button{
 
 .gamepic3{
     width: 25.5%;
+}
+
+.gamepic4{
+    width: 40%;
 }
 
 .playGame{
