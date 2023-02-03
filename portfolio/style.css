@@ -559,6 +559,12 @@ button{
     justify-content: space-evenly;
 }
 
+.GameFlexbox2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .gameTitle{
     text-decoration: none;
     background-color: #FFE4AD;
